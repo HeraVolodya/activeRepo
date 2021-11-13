@@ -1,0 +1,126 @@
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.dropdown-menu {
+  position: static;
+  display: block;
+  width: auto;
+  margin: 4rem auto;
+}
+
+.dropdown-menu-macos {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.dropdown-menu-macos .dropdown-item {
+  border-radius: 0.25rem;
+}
+
+.dropdown-item-danger {
+  color: var(--bs-red);
+}
+.dropdown-item-danger:hover,
+.dropdown-item-danger:focus {
+  color: #fff;
+  background-color: var(--bs-red);
+}
+.dropdown-item-danger.active {
+  background-color: var(--bs-red);
+}
+
+.btn-hover-light {
+  text-align: left;
+  background-color: var(--bs-white);
+  border-radius: 0.25rem;
+}
+.btn-hover-light:hover,
+.btn-hover-light:focus {
+  color: var(--bs-blue);
+  background-color: var(--bs-light);
+}
+
+.cal-month,
+.cal-days,
+.cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+.cal-month-name {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+  color: #5a57ff;
+}
+.cal-month-name-dark {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  text-align: center;
+  color: #fff;
+}
+.cal-weekday,
+.cal-btn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0;
+  color: #9202f8;
+}
+.cal-weekday-dark,
+.cal-btn-dark {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0;
+  color: #fff;
+}
+.cal-btn:not([disabled]) {
+  font-weight: 500;
+}
+.cal-btn:hover,
+.cal-btn:focus {
+  background-color: #9202f8;
+  color: #fff;
+}
+.cal-btn[disabled] {
+  opacity: 0.5;
+}
+
+.cal-btn-dark {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0;
+  color: #fff;
+}
+.cal-btn:not([disabled]) {
+  font-weight: 500;
+}
+.cal-btn-dark:hover,
+.cal-btn-dark:focus {
+  background-color: #2df2ff;
+  color: #9202f8;
+}
+
+.cal-btn-dark[disabled] {
+  opacity: 0.5;
+}

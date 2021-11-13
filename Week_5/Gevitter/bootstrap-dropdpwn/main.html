@@ -1,0 +1,227 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/dropdowns.css" rel="stylesheet">
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="arrow-left-short" viewBox="0 0 16 16">
+			<path fill="#5a57ff"
+				d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+		</symbol>
+	
+		<symbol id="arrow-right-short" viewBox="0 0 16 16">
+			<path fill="#5a57ff"
+				d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+		</symbol>
+	</svg>
+
+<!--Dropdowns-->
+	<div class="d-flex gap-5 justify-content-center" id="dropdownFilter">
+		<!--Light-->
+		<div class="dropdown shadow rounded-3">
+			<form class="p-2 mb-2 bg-light border-bottom" action="">
+				<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
+			</form>
+			<ul class="list-unstyled mb-0">
+				<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">Щось</a></li>
+				<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">Дещо</a></li>
+				<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">Що-небудь</a></li>
+				<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">Хоч щось</a></li>
+			</ul>
+		</div>
+		<!--Dark-->
+		<div class="dropdown dropdown-menu-dark shadow rounded-3">
+			<form class="p-2 mb-2 bg-light border-bottom" action="">
+				<input class="form-control-dark" type="search" autocomplete="false" placeholder="Введіть текст...">
+			</form>
+			<ul class="list-unstyled mb-0">
+				<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">Щось</a></li>
+				<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">Дещо</a></li>
+				<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">Що-небудь</a></li>
+				<li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#">Хоч щось</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!--Calendar-->
+<div>
+	<!--Light-->
+	<div class="dropdown-menu p-2 shadow rounded-3" style="width: 340px" id="dropdownCalendar">
+		<div class="d-grid gap-1">
+			<div class="cal">
+				<div class="cal-month">
+					<button class="btn cal-btn" type="button">
+						<svg class="bi" width="16" height="16">
+							<use xlink:href="#arrow-left-short" />
+						</svg>
+					</button>
+					<strong class="cal-month-name">Листопад</strong>
+					<select class="form-select cal-month-name d-none">
+						<option value="January">Січень</option>
+						<option value="February">Лютий</option>
+						<option value="March">Березень</option>
+						<option value="April">Квітень</option>
+						<option value="May">Трваень</option>
+						<option selected value="June">Червень</option>
+						<option value="July">Липень</option>
+						<option value="August">Серпень</option>
+						<option value="September">Вересень</option>
+						<option value="October">Жовтень</option>
+						<option value="November">Листопад</option>
+						<option value="December">Грудень</option>
+					</select>
+					<button class="btn cal-btn" type="button">
+						<svg class="bi" width="16" height="16">
+							<use xlink:href="#arrow-right-short" />
+						</svg>
+					</button>
+				</div>
+				<div class="cal-weekdays text-muted">
+					<div class="cal-weekday">ПН</div>
+					<div class="cal-weekday">ВТ</div>
+					<div class="cal-weekday">СР</div>
+					<div class="cal-weekday">ЧТ</div>
+					<div class="cal-weekday">ПТ</div>
+					<div class="cal-weekday">СБ</div>
+					<div class="cal-weekday">НД</div>
+				</div>
+				<div class="cal-days">
+
+					<button class="btn cal-btn" type="button">1</button>
+					<button class="btn cal-btn" type="button">2</button>
+					<button class="btn cal-btn" type="button">3</button>
+					<button class="btn cal-btn" type="button">4</button>
+					<button class="btn cal-btn" type="button">5</button>
+					<button class="btn cal-btn" type="button">6</button>
+					<button class="btn cal-btn" type="button">7</button>
+
+					<button class="btn cal-btn" type="button">8</button>
+					<button class="btn cal-btn" type="button">9</button>
+					<button class="btn cal-btn" type="button">10</button>
+					<button class="btn cal-btn" type="button">11</button>
+					<button class="btn cal-btn" type="button">12</button>
+					<button class="btn cal-btn" type="button">13</button>
+					<button class="btn cal-btn" type="button">14</button>
+
+					<button class="btn cal-btn" type="button">15</button>
+					<button class="btn cal-btn" type="button">16</button>
+					<button class="btn cal-btn" type="button">17</button>
+					<button class="btn cal-btn" type="button">18</button>
+					<button class="btn cal-btn" type="button">19</button>
+					<button class="btn cal-btn" type="button">20</button>
+					<button class="btn cal-btn" type="button">21</button>
+
+					<button class="btn cal-btn" type="button">22</button>
+					<button class="btn cal-btn" type="button">23</button>
+					<button class="btn cal-btn" type="button">24</button>
+					<button class="btn cal-btn" type="button">25</button>
+					<button class="btn cal-btn" type="button">26</button>
+					<button class="btn cal-btn" type="button">27</button>
+					<button class="btn cal-btn" type="button">28</button>
+
+					<button class="btn cal-btn" type="button">29</button>
+					<button class="btn cal-btn" type="button">30</button>
+					<button class="btn cal-btn" type="button">31</button>
+
+					<button class="btn cal-btn" disabled type="button">1</button>
+					<button class="btn cal-btn" disabled type="button">2</button>
+					<button class="btn cal-btn" disabled type="button">3</button>
+					<button class="btn cal-btn" disabled type="button">4</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Dark-->
+	<div class="dropdown-menu dropdown-menu-dark p-2 shadow rounded-3" style="width: 340px" id="dropdownCalendar">
+		<div class="d-grid gap-1">
+			<div class="cal">
+				<div class="cal-month">
+					<button class="btn cal-btn-dark" type="button">
+						<svg class="bi" width="16" height="16">
+							<use xlink:href="#arrow-left-short" />
+						</svg>
+					</button>
+					<strong class="cal-month-name-dark">Листопад</strong>
+					<select class="form-select cal-month-name d-none">
+						<option value="January">Січень</option>
+						<option value="February">Лютий</option>
+						<option value="March">Березень</option>
+						<option value="April">Квітень</option>
+						<option value="May">Трваень</option>
+						<option selected value="June">Червень</option>
+						<option value="July">Липень</option>
+						<option value="August">Серпень</option>
+						<option value="September">Вересень</option>
+						<option value="October">Жовтень</option>
+						<option value="November">Листопад</option>
+						<option value="December">Грудень</option>
+					</select>
+					<button class="btn cal-btn-dark" type="button">
+						<svg class="bi" width="16" height="16">
+							<use xlink:href="#arrow-right-short" />
+						</svg>
+					</button>
+				</div>
+				<div class="cal-weekdays text-muted">
+					<div class="cal-weekday-dark">ПН</div>
+					<div class="cal-weekday-dark">ВТ</div>
+					<div class="cal-weekday-dark">СР</div>
+					<div class="cal-weekday-dark">ЧТ</div>
+					<div class="cal-weekday-dark">ПТ</div>
+					<div class="cal-weekday-dark">СБ</div>
+					<div class="cal-weekday-dark">НД</div>
+				</div>
+				<div class="cal-days">
+					<button class="btn cal-btn-dark" type="button">1</button>
+					<button class="btn cal-btn-dark" type="button">2</button>
+					<button class="btn cal-btn-dark" type="button">3</button>
+					<button class="btn cal-btn-dark" type="button">4</button>
+					<button class="btn cal-btn-dark" type="button">5</button>
+					<button class="btn cal-btn-dark" type="button">6</button>
+					<button class="btn cal-btn-dark" type="button">7</button>
+
+					<button class="btn cal-btn-dark" type="button">8</button>
+					<button class="btn cal-btn-dark" type="button">9</button>
+					<button class="btn cal-btn-dark" type="button">10</button>
+					<button class="btn cal-btn-dark" type="button">11</button>
+					<button class="btn cal-btn-dark" type="button">12</button>
+					<button class="btn cal-btn-dark" type="button">13</button>
+					<button class="btn cal-btn-dark" type="button">14</button>
+
+					<button class="btn cal-btn-dark" type="button">15</button>
+					<button class="btn cal-btn-dark" type="button">16</button>
+					<button class="btn cal-btn-dark" type="button">17</button>
+					<button class="btn cal-btn-dark" type="button">18</button>
+					<button class="btn cal-btn-dark" type="button">19</button>
+					<button class="btn cal-btn-dark" type="button">20</button>
+					<button class="btn cal-btn-dark" type="button">21</button>
+
+					<button class="btn cal-btn-dark" type="button">22</button>
+					<button class="btn cal-btn-dark" type="button">23</button>
+					<button class="btn cal-btn-dark" type="button">24</button>
+					<button class="btn cal-btn-dark" type="button">25</button>
+					<button class="btn cal-btn-dark" type="button">26</button>
+					<button class="btn cal-btn-dark" type="button">27</button>
+					<button class="btn cal-btn-dark" type="button">28</button>
+
+					<button class="btn cal-btn-dark" type="button">29</button>
+					<button class="btn cal-btn-dark" type="button">30</button>
+					<button class="btn cal-btn-dark" type="button">31</button>
+					<button class="btn cal-btn-dark" disabled type="button">1</button>
+					<button class="btn cal-btn-dark" disabled type="button">2</button>
+					<button class="btn cal-btn-dark" disabled type="button">3</button>
+					<button class="btn cal-btn-dark" disabled type="button">4</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
