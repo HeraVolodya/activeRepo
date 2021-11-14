@@ -53,6 +53,10 @@ p {
 	text-align: center;
 }
 
+.orbit-wrapper {
+	margin-bottom: unset;
+}
+
 .carousel-item {
 	padding-top: 10rem;
 }
@@ -60,14 +64,13 @@ p {
 /*=================ПОБЛОЧНІ СТИЛІ===================*/
 
 /*ФОН 1 СЛАЙДЕРА*/
-#carousel-1 .carousel-item {
-	/*width: 100%;*/
+#carousel-1 {
 	height: 30rem;
 	background: #FFFFFF;
 }
 
 /*ФОН 2 СЛАЙДЕРА*/
-#carousel-2 .carousel-item {
+#carousel-2 {
 	width: 100%;
 	height: 30rem;
 	background: linear-gradient(262.68deg, rgba(0, 255, 255, 0.69) 0%, rgba(20, 2, 135, 0.04) 100%),
@@ -133,47 +136,53 @@ p {
 	margin-bottom: 1.2rem;
 }
 
-/*СТРІЛКИ 1 БЛОКУ*/
-#carousel-1 span.carousel-control-prev-icon {
-	background-image: url("../images/prev-icon_1.png");
-	width: 2.5rem;
-	height: 4.38rem;
+/*СТРІЛКИ БЛОКІВ*/
+button.orbit-previous,
+button.orbit-next {
+	width: 5rem;
+	height: 7rem;
 }
 
-#carousel-1 span.carousel-control-next-icon {
-	background-image: url("../images/next-icon_1.png");
-	width: 2.5rem;
-	height: 4.38rem;
+#carousel-1 button.orbit-previous:hover,
+#carousel-1 button.orbit-next:hover {
+	background: #FFFFFF;
+	opacity: 0.8;
 }
 
-/*СТРІЛКИ 2 БЛОКУ*/
-#carousel-2 span.carousel-control-prev-icon {
-	background-image: url("../images/prev-icon_2.png");
-	width: 2.5rem;
-	height: 4.38rem;
+button.orbit-previous img,
+button.orbit-next img {
+	width: 100%;
+	height: auto;
 }
 
-#carousel-2 span.carousel-control-next-icon {
-	background-image: url("../images/next-icon_2.png");
-	width: 2.5rem;
-	height: 4.38rem;
+/*ІНДИКАТОРИ ЗАГАЛЬНЕ*/
+.orbit-bullets {
+	margin-bottom: unset;
+	margin-top: 3.8rem;
+}
+
+.orbit-bullets button {
+	width: 2.25rem;
+	height: 0.25rem;
+	border-radius: unset;
 }
 
 /*ІНДИКАТОРИ 1 БЛОКУ*/
-#carousel-1 .carousel-indicators [data-bs-target] {
+#carousel-1 .orbit-bullets button {
 	background-color: #9202F8;
 }
 
-#carousel-1 .carousel-indicators [data-bs-target].active {
+#carousel-1 .orbit-bullets button.is-active {
 	background-color: #3320E9;
 }
 
+
 /*ІНДИКАТОРИ 2 БЛОКУ*/
-#carousel-2 .carousel-indicators [data-bs-target] {
+#carousel-2 .orbit-bullets button {
 	background-color: #FFFFFF;
 }
 
-#carousel-2 .carousel-indicators [data-bs-target].active {
+#carousel-2 .orbit-bullets button.is-active {
 	background-color: #00FFFF;
 }
 
@@ -184,15 +193,16 @@ p {
 	}
 
 	.carousel-item {
-		padding-top: 8rem;
+		padding-top: 27rem;
 	}
 
-	#carousel-1 span.carousel-control-prev-icon,
-	#carousel-1 span.carousel-control-next-icon,
-	#carousel-2 span.carousel-control-prev-icon,
-	#carousel-2 span.carousel-control-next-icon {
-		width: 1.5rem;
-		height: 3rem;
+	.orbit-bullets {
+		margin-top: 0;
+	}
+
+	button.orbit-previous,
+	button.orbit-next {
+		width: 4rem;
 	}
 
 	.ah-first-slider {
@@ -227,12 +237,3 @@ p {
 		display: block;
 	}
 }
-
-
-
-
-
-
-
-
-
