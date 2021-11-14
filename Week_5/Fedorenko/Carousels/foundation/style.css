@@ -1,0 +1,239 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*=================СТИЛІ КАРУСЕЛІ==================*/
+
+/*ЗАГАЛНІ СТИЛІ*/
+
+h3 {
+	text-align: center;
+	color: #242371;
+}
+
+h2 {
+	font-size: 2.56rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2rem;
+	letter-spacing: 0;
+	text-align: left;
+}
+
+p {
+	font-size: 1.31rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2rem;
+	letter-spacing: 0;
+}
+
+.carousel {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-item button {
+	min-width: 10.5rem;
+	border: unset;
+	border-radius: 0.4rem;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	background: linear-gradient(270deg, #D57CFF 0%, #2DF2FF 100%, #2DF2FF 100%);
+}
+
+.carousel-item button span {
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1rem;
+	letter-spacing: 0;
+	text-align: center;
+}
+
+.orbit-wrapper {
+	margin-bottom: unset;
+}
+
+.carousel-item {
+	padding-top: 10rem;
+}
+
+/*=================ПОБЛОЧНІ СТИЛІ===================*/
+
+/*ФОН 1 СЛАЙДЕРА*/
+#carousel-1 {
+	height: 30rem;
+	background: #FFFFFF;
+}
+
+/*ФОН 2 СЛАЙДЕРА*/
+#carousel-2 {
+	width: 100%;
+	height: 30rem;
+	background: linear-gradient(262.68deg, rgba(0, 255, 255, 0.69) 0%, rgba(20, 2, 135, 0.04) 100%),
+	linear-gradient(180deg, #0500FF 0%, #9202F8 100%);
+}
+
+/*ОБГОРТКА 1 СЛАЙДЕРУ*/
+.ah-slide-wrapper_v1 {
+	color: #242371;
+}
+
+/*ОБГОРТКА 2 СЛАЙДЕРУ*/
+.ah-slide-wrapper_v2 {
+	color: #FFFFFF;
+}
+
+/*ВИРІВНЮВАННЯ 1 СЛАЙДЕРУ*/
+.ah-first-slider {
+	float: left;
+	max-width: 25%;
+	text-align: left;
+	margin-left: 10rem;
+}
+
+/*ВИРІВНЮВАННЯ 2 СЛАЙДЕРУ*/
+.ah-second-slider {
+	max-width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ah-second-slider h2,
+.ah-second-slider p {
+	text-align: center;
+}
+
+.ah-second-slider button {
+	margin: 0 auto;
+	display: block;
+}
+
+/*ВИРІВНЮВАННЯ 3 СЛАЙДЕРУ*/
+.ah-third-slider {
+	float: right;
+	max-width: 30%;
+	text-align: right;
+	margin-right: 10rem;
+}
+
+.ah-third-slider h2,
+.ah-third-slider p {
+	text-align: right;
+}
+
+.ah-third-slider button {
+	margin: 0 0 0 auto;
+	display: block;
+}
+
+.ah-slide-wrapper_v1 p,
+.ah-slide-wrapper_v2 p {
+	margin-top: 1.2rem;
+	margin-bottom: 1.2rem;
+}
+
+/*СТРІЛКИ БЛОКІВ*/
+button.orbit-previous,
+button.orbit-next {
+	width: 5rem;
+	height: 7rem;
+}
+
+#carousel-1 button.orbit-previous:hover,
+#carousel-1 button.orbit-next:hover {
+	background: #FFFFFF;
+	opacity: 0.8;
+}
+
+button.orbit-previous img,
+button.orbit-next img {
+	width: 100%;
+	height: auto;
+}
+
+/*ІНДИКАТОРИ ЗАГАЛЬНЕ*/
+.orbit-bullets {
+	margin-bottom: unset;
+	margin-top: 3.8rem;
+}
+
+.orbit-bullets button {
+	width: 2.25rem;
+	height: 0.25rem;
+	border-radius: unset;
+}
+
+/*ІНДИКАТОРИ 1 БЛОКУ*/
+#carousel-1 .orbit-bullets button {
+	background-color: #9202F8;
+}
+
+#carousel-1 .orbit-bullets button.is-active {
+	background-color: #3320E9;
+}
+
+
+/*ІНДИКАТОРИ 2 БЛОКУ*/
+#carousel-2 .orbit-bullets button {
+	background-color: #FFFFFF;
+}
+
+#carousel-2 .orbit-bullets button.is-active {
+	background-color: #00FFFF;
+}
+
+@media (max-width: 576px) {
+
+	html {
+		font-size: 12px;
+	}
+
+	.carousel-item {
+		padding-top: 27rem;
+	}
+
+	.orbit-bullets {
+		margin-top: 0;
+	}
+
+	button.orbit-previous,
+	button.orbit-next {
+		width: 4rem;
+	}
+
+	.ah-first-slider {
+		text-align: unset;
+		margin: unset;
+	}
+
+	.ah-first-slider,
+	.ah-second-slider,
+	.ah-third-slider {
+		min-width: 65%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+	.ah-first-slider h2,
+	.ah-first-slider p,
+	.ah-third-slider h2,
+	.ah-third-slider p {
+		text-align: center;
+	}
+
+	.ah-first-slider button,
+	.ah-third-slider button {
+		margin: 0 auto;
+		display: block;
+	}
+}

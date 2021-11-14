@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Document</title>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+		crossorigin="anonymous"
+	/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-container container">
+	<div class="grid-x grid-padding-x grid-padding-y">
+		<div class="large-12 cell">
+			<h3>Carousel by foundation v6.7.4</h3>
+		</div>
+		<div class="large-12 cell">
+			<div id="carousel-1" class="orbit carousel" role="region" aria-label="Favorite Space Pictures" data-orbit>
+				<div class="orbit-wrapper">
+					<div class="orbit-controls">
+						<button class="orbit-previous">
+							<img src="../images/prev-icon_1.png" alt="Prev">
+						</button>
+						<button class="orbit-next">
+							<img src="../images/next-icon_1.png" alt="Next">
+						</button>
+					</div>
+					<ul class="orbit-container">
+						<li class="is-active orbit-slide carousel-item">
+							<div class="ah-first-slider ah-slide-wrapper_v1">
+								<h2>Реєструйся</h2>
+								<p>Швидко і без проблем
+									знаходь музику</p>
+								<button><span>Peєстрація</span></button>
+							</div>
+						</li>
+						<li class="orbit-slide carousel-item">
+							<div class="ah-second-slider ah-slide-wrapper_v1">
+								<h2>Оформлюй платну підписку</h2>
+								<p>Користуйся рандомайзером без обмежень</p>
+								<button><span>Peєстрація</span></button>
+							</div>
+						</li>
+						<li class="orbit-slide carousel-item">
+							<div class="ah-third-slider ah-slide-wrapper_v1">
+								<h2>Підписуйся в соцмережах</h2>
+								<p>Користуйся рандомайзером без обмежень</p>
+								<button><span>Peєстрація</span></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<nav class="orbit-bullets">
+					<button class="is-active" data-slide="0">
+						<span class="show-for-sr">First slide details.</span>
+						<span class="show-for-sr" data-slide-active-label>Current Slide</span>
+					</button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+				</nav>
+			</div>
+		</div>
+
+		<div class="large-12 cell">
+			<div id="carousel-2" class="orbit carousel" role="region" aria-label="Favorite Space Pictures" data-orbit>
+				<div class="orbit-wrapper">
+					<div class="orbit-controls">
+						<button class="orbit-previous">
+							<img src="../images/prev-icon_2.png" alt="Prev">
+						</button>
+						<button class="orbit-next">
+							<img src="../images/next-icon_2.png" alt="Next">
+						</button>
+					</div>
+					<ul class="orbit-container">
+						<li class="is-active orbit-slide carousel-item">
+							<div class="ah-first-slider ah-slide-wrapper_v2">
+								<h2>Реєструйся</h2>
+								<p>Швидко і без проблем
+									знаходь музику</p>
+								<button><span>Перейти</span></button>
+							</div>
+						</li>
+						<li class="orbit-slide carousel-item">
+							<div class="ah-second-slider ah-slide-wrapper_v2">
+								<h2>Оформлюй платну підписку</h2>
+								<p>Користуйся рандомайзером без обмежень</p>
+								<button><span>Перейти</span></button>
+							</div>
+						</li>
+						<li class="orbit-slide carousel-item">
+							<div class="ah-third-slider ah-slide-wrapper_v2">
+								<h2>Підписуйся в соцмережах</h2>
+								<p>Користуйся рандомайзером без обмежень</p>
+								<button><span>Перейти</span></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<nav class="orbit-bullets">
+					<button class="is-active" data-slide="0">
+						<span class="show-for-sr">First slide details.</span>
+						<span class="show-for-sr" data-slide-active-label>Current Slide</span>
+					</button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"
+></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
+
+
