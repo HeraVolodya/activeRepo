@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Document</title>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+		crossorigin="anonymous"
+	/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-container container">
+	<div class="grid-x grid-padding-x grid-padding-y">
+		<div class="large-12 cell">
+			<h3>Dropdown by foundation v6.7.4</h3>
+		</div>
+		<div class="large-12 cell">
+			<div class="top-bar">
+				<div class="top-bar-left">
+					<ul class="dropdown menu" data-dropdown-menu>
+						<li class="menu-text">activeHamsters</li>
+						<li class="shadow rounded-3">
+							<a href="#">Dropdown v1</a>
+							<ul class="menu vertical ah-dropdown_v1">
+								<li>
+									<form class="p-1" action="">
+										<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
+									</form>
+								<li><a class="dropdown-item" href="#">Щось</a></li>
+								<li><a class="dropdown-item" href="#">Дещо</a></li>
+								<li><a class="dropdown-item" href="#">Що-небудь</a></li>
+								<li><a class="dropdown-item" href="#">Хоч щось</a></li>
+							</ul>
+						</li>
+
+						<li class="shadow rounded-3">
+							<a href="#">Dropdown v2</a>
+							<ul class="menu vertical ah-dropdown_v2">
+								<li>
+									<form class="p-1" action="">
+										<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
+									</form>
+								<li><a class="dropdown-item" href="#">Щось</a></li>
+								<li><a class="dropdown-item" href="#">Дещо</a></li>
+								<li><a class="dropdown-item" href="#">Що-небудь</a></li>
+								<li><a class="dropdown-item" href="#">Хоч щось</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"
+></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
+
+
