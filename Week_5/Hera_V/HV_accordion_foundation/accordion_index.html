@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+    <title>accordion_foundation</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+    crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"/>
+<link rel="stylesheet" href="style/styles.css">
+<!--<link rel="stylesheet" href="style.css">--> <!--Ваш файл CSS-->
+</head>
+<body>
+    <h1 style="text-align:center;">Accordion</h1>
+
+    <div class="grid-x grid-margin-x">
+        <div class="cell auto">
+            <div class="row">
+  <div class="columns">
+    <ul class="accordion" data-accordion>
+  <li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title">Особисті дані</a>
+    <div class="accordion-content" data-tab-content>
+        <div class="textifo-1">
+            <div>Ім’я: Василина</div>
+            <div>Стать: жіноча</div>
+            <div>Дата народження: 14.06.1991</div>
+          </div>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Бібліотека</a>
+    <div class="accordion-content" data-tab-content>
+        <div class="textifo-1">
+            <div>Metallica</div>
+            <div>Karna</div>
+            <div>Жадан і Собаки</div>
+            <div>Tool</div>
+            <div>Один в каное</div>
+            <div>Noisia</div>
+        </div>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Рекомендації</a>
+    <div class="accordion-content" data-tab-content>
+        <div class="textifo-1">
+            <div>Лінія Маннергейма</div>
+            <div>Мантри Керуака</div>
+            <div>Оркестр Че</div>
+        </div>
+    </div>
+  </li>
+</ul>
+  </div>
+</div>
+        </div>
+        <div class="cell auto">
+            <div class="row">
+                <div class="columns">
+                  <ul class="accordion" data-accordion data-multi-expand="true">
+                <li class="accordion-item is-active" data-accordion-item>
+                  <a href="#" class="accordion-title">Особисті дані</a>
+                  <div class="accordion-content" data-tab-content >
+                    <div class="textifo-1">
+                        <div>Ім’я: Василина</div>
+                        <div>Стать: жіноча</div>
+                        <div>Дата народження: 14.06.1991</div>
+                      </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Бібіотека</a>
+                  <div class="accordion-content" data-tab-content>
+                    <div class="textifo-1">
+                        <div>Metallica</div>
+                        <div>Karna</div>
+                        <div>Жадан і Собаки</div>
+                        <div>Tool</div>
+                        <div>Один в каное</div>
+                        <div>Noisia</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Рекомендації</a>
+                  <div class="accordion-content" data-tab-content>
+                        <div class="textifo-1">
+                            <div>Лінія Маннергейма</div>
+                            <div>Мантри Керуака</div>
+                            <div>Оркестр Че</div>
+                        </div>
+                  </div>
+                </li>
+              </ul>
+                </div>
+              </div>
+        </div>
+        <div class="cell auto">
+            <div class="row">
+                <div class="columns">
+                  <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item is-active" data-accordion-item>
+                  <a href="#" class="accordion-title">Особисті дані</a>
+                  <div class="accordion-content" data-tab-content >
+                    <div class="textifo-3">
+                        <div>Ім’я: Василина</div>
+                        <div>Стать: жіноча</div>
+                        <div>Дата народження: 14.06.1991</div>
+                      </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Бібіотека</a>
+                  <div class="accordion-content" data-tab-content>
+                    <div class="textifo-3">
+                        <div>Metallica</div>
+                        <div>Karna</div>
+                        <div>Жадан і Собаки</div>
+                        <div>Tool</div>
+                        <div>Один в каное</div>
+                        <div>Noisia</div>
+                      </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Рекомендації</a>
+                  <div class="accordion-content" data-tab-content>
+                    <div class="textifo-3">
+                        <div>Лінія Маннергейма</div>
+                        <div>Мантри Керуака</div>
+                        <div>Оркестр Че</div>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"
+></script>
+<script>
+$(document).foundation();
+</script>
+</body>
+</html>
