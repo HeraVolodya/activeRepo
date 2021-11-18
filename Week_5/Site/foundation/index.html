@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Document</title>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+		crossorigin="anonymous"
+	/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"/>
+<link rel="stylesheet" href="style/styles.css">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/dropdowns.css" rel="stylesheet">
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+		crossorigin="anonymous"
+	/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="large-12 cell">
+			<div class="top-bar">
+				<div class="top-bar-left">
+					<ul class="dropdown menu" data-dropdown-menu>
+						<li class="menu-text">activeHamsters</li>
+						<li class="shadow rounded-3">
+							<a href="#">Dropdown v1</a>
+							<ul class="menu vertical ah-dropdown_v1">
+								<li>
+									<form class="p-1" action="">
+										<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
+									</form>
+								<li><a class="dropdown-item" href="#">Щось</a></li>
+								<li><a class="dropdown-item" href="#">Дещо</a></li>
+								<li><a class="dropdown-item" href="#">Що-небудь</a></li>
+								<li><a class="dropdown-item" href="#">Хоч щось</a></li>
+							</ul>
+						</li>
+
+						<li class="shadow rounded-3">
+							<a href="#">Dropdown v2</a>
+							<ul class="menu vertical ah-dropdown_v2">
+								<li>
+									<form class="p-1" action="">
+										<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
+									</form>
+								<li><a class="dropdown-item" href="#">Щось</a></li>
+								<li><a class="dropdown-item" href="#">Дещо</a></li>
+								<li><a class="dropdown-item" href="#">Що-небудь</a></li>
+								<li><a class="dropdown-item" href="#">Хоч щось</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+
+<div class="grid-container container">
+	<div class="grid-x grid-padding-x grid-padding-y">
+
+		<div class="large-12 cell">
+			<div id="carousel-2" class="orbit carousel" role="region" aria-label="Favorite Space Pictures" data-orbit>
+				<div class="orbit-wrapper">
+					<div class="orbit-controls">
+						<button class="orbit-previous">
+							<img src="../images/prev-icon_2.png" alt="Prev">
+						</button>
+						<button class="orbit-next">
+							<img src="../images/next-icon_2.png" alt="Next">
+						</button>
+					</div>
+					<ul class="orbit-container">
+						<li class="is-active orbit-slide carousel-item">
+							<div class="ah-first-slider ah-slide-wrapper_v2">
+								<h2>Реєструйся</h2>
+								<p>Швидко і без проблем
+									знаходь музику</p>
+								<button><span>Перейти</span></button>
+							</div>
+						</li>
+						<li class="orbit-slide carousel-item">
+							<div class="ah-second-slider ah-slide-wrapper_v2">
+								<h2>Оформлюй платну підписку</h2>
+								<p>Користуйся рандомайзером без обмежень</p>
+								<button><span>Перейти</span></button>
+							</div>
+						</li>
+						<li class="orbit-slide carousel-item">
+							<div class="ah-third-slider ah-slide-wrapper_v2">
+								<h2>Підписуйся в соцмережах</h2>
+								<p>Користуйся рандомайзером без обмежень</p>
+								<button><span>Перейти</span></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<nav class="orbit-bullets">
+					<button class="is-active" data-slide="0">
+						<span class="show-for-sr">First slide details.</span>
+						<span class="show-for-sr" data-slide-active-label>Current Slide</span>
+					</button>
+					<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+					<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</div>
+	
+	
+	<!--Dark-->
+	<div class="dropdown-menu dropdown-menu-dark p-2 shadow rounded-3" style="width: 340px" id="dropdownCalendar">
+		<div class="d-grid gap-1">
+			<div class="cal">
+				<div class="cal-month">
+					<button class="btn cal-btn-dark" type="button">
+						<svg class="bi" width="16" height="16">
+							<use xlink:href="#arrow-left-short" />
+						</svg>
+					</button>
+					<strong class="cal-month-name-dark">Листопад</strong>
+					<select class="form-select cal-month-name d-none">
+						<option value="January">Січень</option>
+						<option value="February">Лютий</option>
+						<option value="March">Березень</option>
+						<option value="April">Квітень</option>
+						<option value="May">Трваень</option>
+						<option selected value="June">Червень</option>
+						<option value="July">Липень</option>
+						<option value="August">Серпень</option>
+						<option value="September">Вересень</option>
+						<option value="October">Жовтень</option>
+						<option value="November">Листопад</option>
+						<option value="December">Грудень</option>
+					</select>
+					<button class="btn cal-btn-dark" type="button">
+						<svg class="bi" width="16" height="16">
+							<use xlink:href="#arrow-right-short" />
+						</svg>
+					</button>
+				</div>
+				<div class="cal-weekdays text-muted">
+					<div class="cal-weekday-dark">ПН</div>
+					<div class="cal-weekday-dark">ВТ</div>
+					<div class="cal-weekday-dark">СР</div>
+					<div class="cal-weekday-dark">ЧТ</div>
+					<div class="cal-weekday-dark">ПТ</div>
+					<div class="cal-weekday-dark">СБ</div>
+					<div class="cal-weekday-dark">НД</div>
+				</div>
+				<div class="cal-days">
+					<button class="btn cal-btn-dark" type="button">1</button>
+					<button class="btn cal-btn-dark" type="button">2</button>
+					<button class="btn cal-btn-dark" type="button">3</button>
+					<button class="btn cal-btn-dark" type="button">4</button>
+					<button class="btn cal-btn-dark" type="button">5</button>
+					<button class="btn cal-btn-dark" type="button">6</button>
+					<button class="btn cal-btn-dark" type="button">7</button>
+
+					<button class="btn cal-btn-dark" type="button">8</button>
+					<button class="btn cal-btn-dark" type="button">9</button>
+					<button class="btn cal-btn-dark" type="button">10</button>
+					<button class="btn cal-btn-dark" type="button">11</button>
+					<button class="btn cal-btn-dark" type="button">12</button>
+					<button class="btn cal-btn-dark" type="button">13</button>
+					<button class="btn cal-btn-dark" type="button">14</button>
+
+					<button class="btn cal-btn-dark" type="button">15</button>
+					<button class="btn cal-btn-dark" type="button">16</button>
+					<button class="btn cal-btn-dark" type="button">17</button>
+					<button class="btn cal-btn-dark" type="button">18</button>
+					<button class="btn cal-btn-dark" type="button">19</button>
+					<button class="btn cal-btn-dark" type="button">20</button>
+					<button class="btn cal-btn-dark" type="button">21</button>
+
+					<button class="btn cal-btn-dark" type="button">22</button>
+					<button class="btn cal-btn-dark" type="button">23</button>
+					<button class="btn cal-btn-dark" type="button">24</button>
+					<button class="btn cal-btn-dark" type="button">25</button>
+					<button class="btn cal-btn-dark" type="button">26</button>
+					<button class="btn cal-btn-dark" type="button">27</button>
+					<button class="btn cal-btn-dark" type="button">28</button>
+
+					<button class="btn cal-btn-dark" type="button">29</button>
+					<button class="btn cal-btn-dark" type="button">30</button>
+					<button class="btn cal-btn-dark" type="button">31</button>
+					<button class="btn cal-btn-dark" disabled type="button">1</button>
+					<button class="btn cal-btn-dark" disabled type="button">2</button>
+					<button class="btn cal-btn-dark" disabled type="button">3</button>
+					<button class="btn cal-btn-dark" disabled type="button">4</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	
+	
+	<div class="grid-x grid-margin-x">
+        <div class="cell auto">
+            <div class="row">
+  <div class="columns">
+    <ul class="accordion" data-accordion>
+  <li class="accordion-item is-active" data-accordion-item>
+    <a href="#" class="accordion-title">Особисті дані</a>
+    <div class="accordion-content" data-tab-content>
+        <div class="textifo-1">
+            <div>Ім’я: Василина</div>
+            <div>Стать: жіноча</div>
+            <div>Дата народження: 14.06.1991</div>
+          </div>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Бібліотека</a>
+    <div class="accordion-content" data-tab-content>
+        <div class="textifo-1">
+            <div>Metallica</div>
+            <div>Karna</div>
+            <div>Жадан і Собаки</div>
+            <div>Tool</div>
+            <div>Один в каное</div>
+            <div>Noisia</div>
+        </div>
+    </div>
+  </li>
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Рекомендації</a>
+    <div class="accordion-content" data-tab-content>
+        <div class="textifo-1">
+            <div>Лінія Маннергейма</div>
+            <div>Мантри Керуака</div>
+            <div>Оркестр Че</div>
+        </div>
+    </div>
+  </li>
+</ul>
+  </div>
+</div>
+        </div>
+        <div class="cell auto">
+            <div class="row">
+                <div class="columns">
+                  <ul class="accordion" data-accordion data-multi-expand="true">
+                <li class="accordion-item is-active" data-accordion-item>
+                  <a href="#" class="accordion-title">Особисті дані</a>
+                  <div class="accordion-content" data-tab-content >
+                    <div class="textifo-1">
+                        <div>Ім’я: Василина</div>
+                        <div>Стать: жіноча</div>
+                        <div>Дата народження: 14.06.1991</div>
+                      </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Бібіотека</a>
+                  <div class="accordion-content" data-tab-content>
+                    <div class="textifo-1">
+                        <div>Metallica</div>
+                        <div>Karna</div>
+                        <div>Жадан і Собаки</div>
+                        <div>Tool</div>
+                        <div>Один в каное</div>
+                        <div>Noisia</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Рекомендації</a>
+                  <div class="accordion-content" data-tab-content>
+                        <div class="textifo-1">
+                            <div>Лінія Маннергейма</div>
+                            <div>Мантри Керуака</div>
+                            <div>Оркестр Че</div>
+                        </div>
+                  </div>
+                </li>
+              </ul>
+                </div>
+              </div>
+        </div>
+        <div class="cell auto">
+            <div class="row">
+                <div class="columns">
+                  <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item is-active" data-accordion-item>
+                  <a href="#" class="accordion-title">Особисті дані</a>
+                  <div class="accordion-content" data-tab-content >
+                    <div class="textifo-3">
+                        <div>Ім’я: Василина</div>
+                        <div>Стать: жіноча</div>
+                        <div>Дата народження: 14.06.1991</div>
+                      </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Бібіотека</a>
+                  <div class="accordion-content" data-tab-content>
+                    <div class="textifo-3">
+                        <div>Metallica</div>
+                        <div>Karna</div>
+                        <div>Жадан і Собаки</div>
+                        <div>Tool</div>
+                        <div>Один в каное</div>
+                        <div>Noisia</div>
+                      </div>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">Рекомендації</a>
+                  <div class="accordion-content" data-tab-content>
+                    <div class="textifo-3">
+                        <div>Лінія Маннергейма</div>
+                        <div>Мантри Керуака</div>
+                        <div>Оркестр Че</div>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+                </div>
+              </div>
+        </div>
+      </div>
+
+	
+	<div class="large-12 cell">
+			<div class="tabs-content" data-tabs-content="example-tabs-2">
+				<!--Панель кнопок-->
+				<ul class="tabs ah-nav_v2" data-tabs id="example-tabs-2">
+					<!--Кнопка "Про нас"-->
+					<li class="tabs-title is-active">
+						<button class="ah-link-button"><a href="#about-2" aria-selected="true"><span>Про
+						гурт</span></a></button>
+					</li>
+					<!--Кнопка "Фото"-->
+					<li class="tabs-title">
+						<button class="ah-link-button"><a data-tabs-target="photo-2" href="#photo-2"><span>Фото</span></a></button>
+					</li>
+					<!--Кнопка "Тексти"-->
+					<li
+						class="tabs-title">
+						<button
+							class="ah-link-button"><a data-tabs-target="texts-2" href="#texts-2"><span>Тексти</span></a></button>
+					</li>
+				</ul>
+				<div class="ah-content-block_v2 tab-content">
+					<!--Про нас-->
+					<div class="tabs-panel is-active ah-tab-about" id="about-2">
+						<p>«Жадан і Собаки» — український рок-гурт із Харкова, що виник у 2000 році. Колектив брав участь у
+							фестивалях
+							«Таврійські ігри», «Раз. Liv», «Музичний Острів», «5 озер», «Мазепа-Фест», «День Незалежності з Махном» та
+							ін.</p>
+					</div>
+					<!--Фото-->
+					<div class="tabs-panel" id="photo-2">
+						<div class="ah-image-wrapper">
+							<img
+								src="../images/zhadan1.jpg"
+								alt="Жадан і собаки"
+							/>
+						</div>
+					</div>
+					<!--Тексти-->
+					<div class="tabs-panel ah-tab-texts" id="texts-2">
+						<div class="ah-text-wrapper">
+							<p> Рушаємо, Ребе, нічною залізницею – Вночі вокзали пахнуть
+								смертю і корицею. Жінки лягають спати з духами-іконами Давай
+								вибиратися товарними вагонами. Вантаж у вагони свою параною,
+								За чорним утомленим Сатаною, Пропащі душі, спотворені лиця,
+								Куди нас вивезе наша залізниця?</p>
+							<a
+								href="https://www.pisni.org.ua/songs/4383389.html"
+								target="_blank"
+							><span>Посилання на інші тексти</span></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"
+></script>
+<script>
+$(document).foundation();
+</script>
+</body>
+</html>
+
+

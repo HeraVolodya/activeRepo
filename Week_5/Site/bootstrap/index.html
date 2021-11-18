@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<link href="css/bootstrap.css" rel="stylesheet"> <!--Ломає дропдаун-->
+	<link href="css/dropdowns.css" rel="stylesheet"> <!--Ломає дропдаун-->
+	<link rel="stylesheet" href="styles/style.css">
+	<title>Document</title>
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">activeHamsters</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					        aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item dropdown shadow rounded-3">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdown-1" role="button"
+								   data-bs-toggle="dropdown" aria-expanded="false">
+									Dropdown v1
+								</a>
+								<ul class="dropdown-menu ah-dropdown_v1" aria-labelledby="dropdown-1">
+									<li>
+										<form class="p-1" action="">
+											<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
+										</form>
+									</li>
+									<li><a class="dropdown-item" href="#">Щось</a></li>
+									<li><a class="dropdown-item" href="#">Дещо</a></li>
+									<li><a class="dropdown-item" href="#">Що-небудь</a></li>
+									<li><a class="dropdown-item" href="#">Хоч щось</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown shadow rounded-3">
+								<a class="nav-link dropdown-toggle" href="#" id="dropdown-2" role="button"
+								   data-bs-toggle="dropdown" aria-expanded="false">
+									Dropdown v2
+								</a>
+								<ul class="dropdown-menu ah-dropdown_v2" aria-labelledby="dropdown-2">
+									<li>
+										<form class="p-1" action="">
+											<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
+										</form>
+									</li>
+									<li><a class="dropdown-item" href="#">Щось</a></li>
+									<li><a class="dropdown-item" href="#">Дещо</a></li>
+									<li><a class="dropdown-item" href="#">Що-небудь</a></li>
+									<li><a class="dropdown-item" href="#">Хоч щось</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+<div class="container-fluid">
+	
+		<div class="col-md-12 mt-5">
+			<div
+				id="carousel-2"
+				class="carousel slide"
+				data-bs-ride="carousel"
+			>
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carousel-2"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carousel-2"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carousel-2"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="ah-first-slider ah-slide-wrapper_v2">
+							<h2>Реєструйся</h2>
+							<p>Швидко і без проблем
+								знаходь музику</p>
+							<button><span>Peєстрація</span></button>
+						</div>
+
+					</div>
+					<div class="carousel-item">
+						<div class="ah-second-slider ah-slide-wrapper_v2">
+							<h2>Оформлюй платну підписку</h2>
+							<p>Користуйся рандомайзером без обмежень</p>
+							<button><span>Peєстрація</span></button>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="ah-third-slider ah-slide-wrapper_v2">
+							<h2>Підписуйся в соцмережах</h2>
+							<p>Користуйся рандомайзером без обмежень</p>
+							<button><span>Peєстрація</span></button>
+						</div>
+					</div>
+				</div>
+
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carousel-2"
+					data-bs-slide="prev"
+				>
+              <span
+	              class="carousel-control-prev-icon"
+	              aria-hidden="true"
+              ></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carousel-2"
+					data-bs-slide="next"
+				>
+              <span
+	              class="carousel-control-next-icon"
+	              aria-hidden="true"
+              ></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	
+</div>
+	<!--Dark-->
+	<div class="dropdown-menu dropdown-menu-dark p-2 shadow rounded-3" style="width: 340px" id="dropdownCalendar">
+		<div class="d-grid gap-1">
+			<div class="cal">
+				<div class="cal-month">
+					<button class="btn cal-btn-dark" type="button">
+						<svg class="bi" width="16" height="16">
+							<use xlink:href="#arrow-left-short" />
+						</svg>
+					</button>
+					<strong class="cal-month-name-dark">Листопад</strong>
+					<select class="form-select cal-month-name d-none">
+						<option value="January">Січень</option>
+						<option value="February">Лютий</option>
+						<option value="March">Березень</option>
+						<option value="April">Квітень</option>
+						<option value="May">Трваень</option>
+						<option selected value="June">Червень</option>
+						<option value="July">Липень</option>
+						<option value="August">Серпень</option>
+						<option value="September">Вересень</option>
+						<option value="October">Жовтень</option>
+						<option value="November">Листопад</option>
+						<option value="December">Грудень</option>
+					</select>
+					<button class="btn cal-btn-dark" type="button">
+						<svg class="bi" width="16" height="16">
+							<use xlink:href="#arrow-right-short" />
+						</svg>
+					</button>
+				</div>
+				<div class="cal-weekdays text-muted">
+					<div class="cal-weekday-dark">ПН</div>
+					<div class="cal-weekday-dark">ВТ</div>
+					<div class="cal-weekday-dark">СР</div>
+					<div class="cal-weekday-dark">ЧТ</div>
+					<div class="cal-weekday-dark">ПТ</div>
+					<div class="cal-weekday-dark">СБ</div>
+					<div class="cal-weekday-dark">НД</div>
+				</div>
+				<div class="cal-days">
+					<button class="btn cal-btn-dark" type="button">1</button>
+					<button class="btn cal-btn-dark" type="button">2</button>
+					<button class="btn cal-btn-dark" type="button">3</button>
+					<button class="btn cal-btn-dark" type="button">4</button>
+					<button class="btn cal-btn-dark" type="button">5</button>
+					<button class="btn cal-btn-dark" type="button">6</button>
+					<button class="btn cal-btn-dark" type="button">7</button>
+
+					<button class="btn cal-btn-dark" type="button">8</button>
+					<button class="btn cal-btn-dark" type="button">9</button>
+					<button class="btn cal-btn-dark" type="button">10</button>
+					<button class="btn cal-btn-dark" type="button">11</button>
+					<button class="btn cal-btn-dark" type="button">12</button>
+					<button class="btn cal-btn-dark" type="button">13</button>
+					<button class="btn cal-btn-dark" type="button">14</button>
+
+					<button class="btn cal-btn-dark" type="button">15</button>
+					<button class="btn cal-btn-dark" type="button">16</button>
+					<button class="btn cal-btn-dark" type="button">17</button>
+					<button class="btn cal-btn-dark" type="button">18</button>
+					<button class="btn cal-btn-dark" type="button">19</button>
+					<button class="btn cal-btn-dark" type="button">20</button>
+					<button class="btn cal-btn-dark" type="button">21</button>
+
+					<button class="btn cal-btn-dark" type="button">22</button>
+					<button class="btn cal-btn-dark" type="button">23</button>
+					<button class="btn cal-btn-dark" type="button">24</button>
+					<button class="btn cal-btn-dark" type="button">25</button>
+					<button class="btn cal-btn-dark" type="button">26</button>
+					<button class="btn cal-btn-dark" type="button">27</button>
+					<button class="btn cal-btn-dark" type="button">28</button>
+
+					<button class="btn cal-btn-dark" type="button">29</button>
+					<button class="btn cal-btn-dark" type="button">30</button>
+					<button class="btn cal-btn-dark" type="button">31</button>
+					<button class="btn cal-btn-dark" disabled type="button">1</button>
+					<button class="btn cal-btn-dark" disabled type="button">2</button>
+					<button class="btn cal-btn-dark" disabled type="button">3</button>
+					<button class="btn cal-btn-dark" disabled type="button">4</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Особисті дані
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <div class="textifo-1">
+                    <div>Ім’я: Василина</div>
+                    <div>Стать: жіноча</div>
+                    <div>Дата народження: 14.06.1991</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Бібліотека 
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <div class="textifo-1">
+                    <div>Metallica</div>
+                    <div>Karna</div>
+                    <div>Жадан і Собаки</div>
+                    <div>Tool</div>
+                    <div>Один в каное</div>
+                    <div>Noisia</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Рекомендації
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <div class="textifo-1">
+                    <div>Лінія Маннергейма</div>
+                    <div>Мантри Керуака</div>
+                    <div>Оркестр Че</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Особисті дані
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Бібліотека
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Рекомендації
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Особисті дані
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="textifo-3">
+                    <div>Ім’я: Василина</div>
+                    <div>Стать: жіноча</div>
+                    <div>Дата народження: 14.06.1991</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Бібліотека 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="textifo-3">
+                    <div>Metallica</div>
+                    <div>Karna</div>
+                    <div>Жадан і Собаки</div>
+                    <div>Tool</div>
+                    <div>Один в каное</div>
+                    <div>Noisia</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Рекомендації
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="textifo-3">
+                    <div>Лінія Маннергейма</div>
+                    <div>Мантри Керуака</div>
+                    <div>Оркестр Че</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-12 mb-3">
+
+
+			<!--НАВІГАЦІЯ ТАБ-1-->
+			<ul class="nav nav-pills ah-nav_v2" id="pills-tab_2" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button
+						class="ah-link-button active"
+						id="about-tab_2"
+						data-bs-toggle="pill"
+						data-bs-target="#about-2"
+						type="button"
+						role="tab"
+						aria-controls="about_2"
+						aria-selected="true"
+					>
+						<span>Про гурт</span>
+					</button>
+				</li>
+
+				<li class="nav-item" role="presentation">
+					<button
+						class="ah-link-button"
+						id="photo-tab_2"
+						data-bs-toggle="pill"
+						data-bs-target="#photo-2"
+						type="button"
+						role="tab"
+						aria-controls="photo_2"
+						aria-selected="false"
+					>
+						<span>Фото</span>
+					</button>
+				</li>
+
+				<li class="nav-item" role="presentation">
+					<button
+						class="ah-link-button"
+						id="texts-tab_2"
+						data-bs-toggle="pill"
+						data-bs-target="#texts-2"
+						type="button"
+						role="tab"
+						aria-controls="texts_2"
+						aria-selected="false"
+					>
+						<span>Тексти</span>
+					</button>
+				</li>
+			</ul>
+			<!--НАВІГАЦІЯ ТАБ-1-->
+
+			<!--КОНТЕНТ ТАБ-2-->
+			<div class="tab-content ah-content-block_v2" id="pills-tabContent_2">
+				<div
+					class="tab-pane fade show active ah-tab-about"
+					id="about-2"
+					role="tabpanel"
+					aria-labelledby="about-tab_2"
+				>
+					<p>
+						«Жадан і Собаки» — український рок-гурт із Харкова, що виник у
+						2000 році. Колектив брав участь у фестивалях «Таврійські ігри»,
+						«Раз. Liv», «Музичний Острів», «5 озер», «Мазепа-Фест», «День
+						Незалежності з Махном» та ін.
+					</p>
+				</div>
+
+				<div
+					class="tab-pane fade"
+					id="photo-2"
+					role="tabpanel"
+					aria-labelledby="photo-tab_2"
+				>
+					<div class="ah-image-wrapper">
+						<img
+							class="img-fluid"
+							src="../images/zhadan1.jpg"
+							alt="Жадан і собаки"
+						/>
+					</div>
+				</div>
+
+				<div
+					class="tab-pane fade ah-tab-texts"
+					id="texts-2"
+					role="tabpanel"
+					aria-labelledby="texts-tab_2"
+				>
+					<div class="ah-text-wrapper">
+						<p>
+							Рушаємо, Ребе, нічною залізницею – Вночі вокзали пахнуть
+							смертю і корицею. Жінки лягають спати з духами-іконами Давай
+							вибиратися товарними вагонами. Вантаж у вагони свою параною,
+							За чорним утомленим Сатаною, Пропащі душі, спотворені лиця,
+							Куди нас вивезе наша залізниця?
+						</p>
+						<a
+							href="https://www.pisni.org.ua/songs/4383389.html"
+							target="_blank"
+						><span>Посилання на інші тексти</span></a
+						>
+					</div>
+				</div>
+			</div>
+			<!--КОНТЕНТ ТАБ-2-->
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
