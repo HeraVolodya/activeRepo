@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.rounded {
+	border-radius: 1.2rem;
+}
+
+.ah-container {
+	height: 100%;
+	max-width: 100%;
+	border-bottom: 1px solid blue; /* тільки для розробки*/
+}
+
+.ah-main {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	height: 95rem; /* тільки для розробки*/
+}
+
+.ah-sidebar {
+	display: flex;
+	max-width: 100%;
+	height: 100%;
+	flex-flow: row nowrap;
+	flex: 18%;
+	background: #FFFFFF;
+	border-right: 1px solid orange; /* тільки для розробки*/
+}
+
+.ah-content {
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 82%;
+	max-width: 100%;
+	height: 100%;
+	background: #f5f9f1;
+}
+
+.ah-header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	max-width: 100%;
+	background: #FFFFFF;
+	z-index: 2;
+	height: 7.5rem;
+	border-bottom: 1px solid #0dcaf0; /* тільки для розробки*/
+}
+
+.ah-statistic {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 100%;
+	height: 21rem;
+	/*border: 1px solid #0f5132;*/ /* тільки для розробки*/
+}
+
+.ah-statistic_info {
+	display: flex;
+	width: 46%;
+	height: 85%;
+	border: 1px solid #523e02; /* тільки для розробки*/
+}
+
+.ah-statistic_chart {
+	display: flex;
+	width: 46%;
+	height: 85%;
+	border: 1px solid #5A57FF; /* тільки для розробки*/
+}
+
+.ah-info {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	max-width: 100%;
+	height: 67rem;
+}
+
+.ah-info-one {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 78%;
+	/*	border: 1px solid #664d03;*/ /* тільки для розробки*/
+}
+
+.ah-info-one_trainers {
+	width: 95%;
+	height: 40%;
+	border: 1px solid #fd7e14; /* тільки для розробки*/
+}
+
+.ah-info-one_calories {
+	width: 95%;
+	height: 50%;
+	border: 1px solid #9202f8; /* тільки для розробки*/
+}
+
+.ah-info-second {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: start;
+	align-items: center;
+	width: 22%;
+	height: 100%;
+}
+
+.ah-info-second_diet-menu {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	width: 91%;
+	height: 95%;
+	border: 1px solid #565e64; /* тільки для розробки*/
+}
+
+@media (max-width: 576px) {
+
+	html {
+		font-size: 8px;
+	}
+}
+
+@media (min-width: 577px) {
+
+	html {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 992px) {
+
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	html {
+		font-size: 16px;
+	}
+}
+
+
