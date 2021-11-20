@@ -1,0 +1,10 @@
+.nav .btn:hover {
+  background-color: #E8EBF6;
+  color: #0B2A97;
+  border-right: 6px solid #0B2A97;
+  border-radius: 10px  0px  0px 10px;
+}
+.nav_btn_grup .btn {
+  background-color: #E9EEFF;
+  border-radius: 10px;
+}
