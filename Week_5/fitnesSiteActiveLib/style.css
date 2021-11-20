@@ -11,6 +11,10 @@ body {
 	border-radius: 1.2rem;
 }
 
+.bg-light {
+	background: #FFFFFF;
+}
+
 .ah-container {
 	height: 100%;
 	max-width: 100%;
@@ -26,11 +30,10 @@ body {
 
 .ah-sidebar {
 	display: flex;
+	flex-flow: column nowrap;
 	max-width: 100%;
 	height: 100%;
-	flex-flow: row nowrap;
 	flex: 18%;
-	background: #FFFFFF;
 	border-right: 1px solid orange; /* тільки для розробки*/
 }
 
@@ -61,7 +64,6 @@ body {
 	align-items: center;
 	max-width: 100%;
 	height: 21rem;
-	/*border: 1px solid #0f5132;*/ /* тільки для розробки*/
 }
 
 .ah-statistic_info {
@@ -113,7 +115,7 @@ body {
 	justify-content: start;
 	align-items: center;
 	width: 22%;
-	height: 100%;
+	min-height: auto;
 }
 
 .ah-info-second_diet-menu {
@@ -125,39 +127,116 @@ body {
 	border: 1px solid #565e64; /* тільки для розробки*/
 }
 
-@media (max-width: 576px) {
-
-	html {
-		font-size: 8px;
-	}
-}
-
-@media (min-width: 577px) {
+@media (max-width: 575px) {
 
 	html {
 		font-size: 10px;
 	}
+
+	.ah-main {
+		flex-flow: column nowrap;
+		justify-content: space-around;
+	}
+
+	.ah-sidebar {
+		min-height: auto;
+		flex: unset;
+		border-right: unset;
+		border-bottom: 1px solid red; /* тільки для розробки*/
+	}
+
+	.ah-statistic {
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 1.5rem;
+	}
+
+	.ah-statistic_info {
+		width: 96%;
+		height: 45%;
+		/*min-height: auto; для динамічного контенту*/
+	}
+
+	.ah-statistic_chart {
+		width: 96%;
+		height: 45%;
+	}
+
+	.ah-info {
+		flex-flow: column nowrap;
+		min-height: auto;
+		/*height: unset;*/
+	}
+
+	.ah-info-one {
+		width: 100%;
+	}
+
+	.ah-info-second {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: auto;
+	}
+
+	.ah-info-second_diet-menu {
+		width: 95%;
+		min-height: auto;
+	}
 }
 
-@media (min-width: 768px) {
+@media only screen
+and (min-device-width: 576px)
+and (max-device-width: 768px) {
 
 	html {
 		font-size: 12px;
 	}
-}
 
-@media (min-width: 992px) {
+	.ah-statistic {
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 1.5rem;
+	}
 
-	html {
-		font-size: 14px;
+	.ah-statistic_info {
+		width: 96%;
+		height: 45%;
+		/*min-height: auto; для динамічного контенту*/
+	}
+
+	.ah-statistic_chart {
+		width: 96%;
+		height: 45%;
+	}
+
+	.ah-info {
+		flex-flow: column nowrap;
+		min-height: auto;
+		/*height: unset;*/
+	}
+
+	.ah-info-one {
+		width: 100%;
+	}
+
+	.ah-info-second {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: auto;
+	}
+
+	.ah-info-second_diet-menu {
+		width: 95%;
+		min-height: auto;
 	}
 }
 
-@media (min-width: 1200px) {
 
-	html {
-		font-size: 16px;
-	}
-}
 
 
