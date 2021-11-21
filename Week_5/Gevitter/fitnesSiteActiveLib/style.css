@@ -1,0 +1,560 @@
+/*==========================СТИЛІ ЗАГАЛЬНІ===========================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.62rem;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.87rem;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.rounded {
+  border-radius: 1.2rem;
+}
+
+.bg-light {
+  background: #ffffff;
+}
+
+.ah-container {
+  /* height: 100%; */
+  max-width: 100%;
+  border-bottom: 1px solid blue; /* тільки для розробки*/
+}
+
+.ah-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  height: 100%; /* тільки для розробки*/
+}
+
+/*Розташовує хедери графіків в строку і розтягує на ширину шрафіку*/
+.ah-canvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Налаштування кнопок*/
+.ah-btn-submit {
+  color: #0b2a97;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  border-radius: 9px;
+  border: none;
+  /* border: 1px solid #ffffff; */
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+}
+
+/*Альтернативні налаштування кнопок графіку*/
+.canvas-chart-2 .ah-btn-submit {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #0b2a97;
+  text-align: center;
+  border-radius: 9px;
+  border: none;
+  /* border: 1px solid #ffffff; */
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+}
+
+/*==========================СТИЛІ САЙДБАРУ===========================*/
+
+.ah-sidebar {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 100%;
+  height: 100%;
+  flex: 18%;
+}
+
+.ah-sidebar-logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.ah-sidebar-logo h1 {
+  margin-left: 1.5rem;
+}
+
+.ah-sidebar-logo span {
+  color: #0b2a97;
+}
+
+.ah-sidebar h2 {
+  margin-top: 3rem;
+  margin-left: 3.12rem;
+}
+
+.ah-sidebar-nav {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.ah-sidebar-nav_link {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  padding-top: 1.37rem;
+  padding-bottom: 1.37rem;
+  padding-left: 3.37rem;
+  text-align: left;
+  background: #ffffff;
+}
+
+.ah-sidebar-nav_link a {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  text-align: left;
+  color: #757575;
+  text-decoration: none;
+  margin-left: 1.56rem;
+}
+
+.ah-sidebar-nav_link:hover {
+  background: #e8ebf6;
+  border-right: 6px solid #0b2a97;
+  margin-left: 1.75rem;
+  padding-left: 1.6rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.ah-sidebar-nav_link:hover a {
+  color: #0b2a97;
+}
+
+.ah-button-container,
+.ah-footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.ah-plan-button {
+  display: flex;
+  max-width: 71%;
+  flex-flow: row nowrap;
+  align-items: center;
+  background: #0b2a97;
+  margin: 0 auto;
+  padding: 1.5rem 1.2rem 1.5rem 1.12rem;
+  border-radius: 1rem;
+}
+
+.ah-plan-button p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  text-align: left;
+  margin-left: 1rem;
+  color: #ffffff;
+}
+
+.ah-footer {
+  display: flex;
+  min-width: 71%;
+  flex-flow: column nowrap;
+  align-items: start;
+  background: inherit;
+  margin: 0 auto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.13rem;
+  letter-spacing: 0;
+  color: #969ba0;
+}
+
+.ah-footer p:nth-child(1) {
+  font-weight: 600;
+}
+
+.ah-footer p:nth-child(2) {
+  font-weight: 400;
+}
+
+.ah-footer p:nth-child(3) {
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/*==========================СТИЛІ ПРАВОГО БЛОКУ КОНТЕНТУ===========================*/
+
+.ah-content {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 82%;
+  max-width: 100%;
+  height: 100%;
+  background: #f5f9f1;
+}
+
+/*==========================СТИЛІ ХЕДЕРУ===========================*/
+
+.ah-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  background: #ffffff;
+  z-index: 2;
+  /* height: 7.5rem; */
+  border-bottom: 1px solid #0dcaf0; /* тільки для розробки*/
+}
+
+.ah-header-navbar,
+.ah-header-icon {
+  display: flex;
+  align-items: center;
+}
+
+.ah-header-icon {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboard {
+  margin: 0 1rem 0 1rem;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-decoration: none;
+}
+
+/*Розмір, закруглення, зовнішні та внутрішні відступи, колір фону плейсхолдера*/
+.ah-input-text {
+  color: #8d8d8d;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #f3f3f3;
+  border-radius: 9px;
+  border: none;
+  margin: 0.5rem;
+}
+
+/*Зміна кольору тексту placeholder*/
+input[type="text"]::-webkit-input-placeholder {
+  color: #8d8d8d;
+}
+
+/*Розташовує ім'я користувача і статус в стовпчик та додає відступ від аватарки*/
+.ah-user-block {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/*Додає відстпупи між іконки зправа*/
+.ah-header-link {
+  margin: 1rem;
+}
+
+/*==========================СТИЛІ БЛОКУ СТАТИСТИКИ===========================*/
+
+.ah-statistic {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  height: 21rem;
+}
+
+/*==========================СТИЛІ БЛОКУ INFO СТАТИСТИКИ===========================*/
+
+.ah-statistic_info {
+  display: flex;
+  width: 46%;
+  height: 85%;
+  border: 1px solid #523e02; /* тільки для розробки*/
+}
+
+/*==========================СТИЛІ БЛОКУ CHART СТАТИСТИКИ===========================*/
+
+.ah-statistic_chart {
+  display: flex;
+  width: 46%;
+  height: 85%;
+  border: 1px solid #5a57ff; /* тільки для розробки*/
+}
+
+/*Розмір, відступи, колір фону 1 графіку*/
+.canvas-chart-1 {
+  width: 100%;
+  background-color: #fff;
+}
+
+/*==========================СТИЛІ БЛОКУ INFO ===========================*/
+
+.ah-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  max-width: 100%;
+  height: 67rem;
+}
+
+/*==========================СТИЛІ БЛОКУ 1 INFO ===========================*/
+
+.ah-info-one {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 78%;
+  /*	border: 1px solid #664d03;*/ /* тільки для розробки*/
+}
+
+/*==========================СТИЛІ БЛОКУ 1 РЕКОМ. ТРЕНЕРІВ===========================*/
+
+.ah-info-one_trainers {
+  width: 95%;
+  /* height: 40%; */
+  border: 1px solid #fd7e14; /* тільки для розробки*/
+}
+
+/*Ширина, колір, закруглення кутів горизонтального блоку тренувань*/
+.ah-horizontal-block {
+  /* width: 60%; */
+  background-color: #fff;
+}
+
+/*Додає флекс, врап та відступ до блоку із профилями тренерів*/
+.ah-horizontal-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/*Розмір аватарів тренерів*/
+.ah-profile-block img {
+  width: 7rem;
+}
+
+/*Розташовує профиль тренера у колонку, задає колір, відступи і закруглення, цетнрує по вертикалі*/
+.ah-profile-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem;
+
+  align-items: center;
+}
+
+/*Додає тінь до блоку із профелем тренера при наведенні*/
+:hover.ah-profile-block {
+  box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+/*Центрує елементи по вертикалі, додає колір і товщину тексту*/
+.ah-rating {
+  display: flex;
+  align-items: center;
+  color: #0b2a97;
+  font-weight: 500;
+}
+
+/*Альтернативні налаштування кнопок блоку тренерів*/
+.ah-horizontal-block .ah-btn-submit {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #0b2a97;
+  text-align: center;
+  border-radius: 9px;
+  border: none;
+  /* border: 1px solid #ffffff; */
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+}
+/*==========================СТИЛІ БЛОКУ 1 ГРАФІКУ КАЛОРІЙ===========================*/
+
+.ah-info-one_calories {
+  width: 95%;
+  /* height: 50%; */
+  border: 1px solid #9202f8; /* тільки для розробки*/
+  margin: 1.5rem;
+}
+
+/*Розмір, відступи, колір фону 2 графіку*/
+.canvas-chart-2 {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/*==========================СТИЛІ БЛОКУ 2 INFO ===========================*/
+
+.ah-info-second {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 22%;
+  min-height: auto;
+}
+
+/*==========================СТИЛІ БЛОКУ ДІЕТ. МЕНЮ ===========================*/
+
+.ah-info-second_diet-menu {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  width: 91%;
+  height: 95%;
+  border: 1px solid #565e64; /* тільки для розробки*/
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 10px;
+  }
+
+  .ah-main {
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+
+  .ah-sidebar {
+    height: 100%;
+    flex: unset;
+    border-right: unset;
+    border-bottom: 1px solid red; /* тільки для розробки*/
+  }
+
+  .ah-button-container,
+  .ah-footer-container {
+    margin-top: 3rem;
+  }
+
+  .ah-footer-container {
+    margin-bottom: 2rem;
+  }
+
+  .ah-statistic {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .ah-statistic_info {
+    width: 96%;
+    height: 45%;
+    /*min-height: auto; для динамічного контенту*/
+  }
+
+  .ah-statistic_chart {
+    width: 96%;
+    height: 45%;
+  }
+
+  .ah-info {
+    flex-flow: column nowrap;
+    min-height: auto;
+    /*height: unset;*/
+  }
+
+  .ah-info-one {
+    width: 100%;
+  }
+
+  .ah-info-second {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .ah-info-second_diet-menu {
+    width: 95%;
+    min-height: auto;
+  }
+}
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .ah-statistic {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .ah-statistic_info {
+    width: 96%;
+    height: 45%;
+    /*min-height: auto; для динамічного контенту*/
+  }
+
+  .ah-statistic_chart {
+    width: 96%;
+    height: 45%;
+  }
+
+  .ah-info {
+    flex-flow: column nowrap;
+    min-height: auto;
+    /*height: unset;*/
+  }
+
+  .ah-info-one {
+    width: 100%;
+  }
+
+  .ah-info-second {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .ah-info-second_diet-menu {
+    width: 95%;
+    min-height: auto;
+  }
+}

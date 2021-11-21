@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GymoveFitnessAdmin</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ah-container">
+	<!--контейнер для сайдбару та основного контенту-->
+	<div class="ah-main">
+		<!--контейнер для сайдбару-->
+		<div class="ah-sidebar bg-light">
+			<div class="ah-sidebar-logo">
+				<img src="svg/logo.svg" alt="Logo">
+				<h1>Gy<span>move.</span></h1>
+			</div>
+			<h2>Main menu</h2>
+			<ul class="ah-sidebar-nav">
+				<li class="ah-sidebar-nav_link">
+					<img src="svg/plan_icon.svg" alt="Dashboard">
+					<a href="#">Dashboard</a></li>
+				<li class="ah-sidebar-nav_link">
+					<img src="svg/statistic_icon.svg" alt="Workout Statistic">
+					<a href="#">Workout Statistic</a></li>
+				<li class="ah-sidebar-nav_link">
+					<img src="svg/plan_icon.svg" alt="Workout Plan">
+					<a href="#">Workout Plan</a></li>
+				<li class="ah-sidebar-nav_link">
+					<img src="svg/distance_icon.svg" alt="Distance Map">
+					<a href="#">Distance Map</a></li>
+				<li class="ah-sidebar-nav_link">
+					<img src="svg/diet_icon.svg" alt="Diet Food Menu">
+					<a href="#">Diet Food Menu</a></li>
+				<li class="ah-sidebar-nav_link">
+					<img src="svg/personal_icon.svg" alt="Personal Record">
+					<a href="#">Personal Record</a></li>
+			</ul>
+			<div class="ah-button-container">
+				<div class="ah-plan-button">
+					<img src="svg/plan_button_logo.svg" alt="Logo">
+					<p>Create Workout Plan Now</p>
+				</div>
+			</div>
+			<div class="ah-footer-container">
+				<div class="ah-footer">
+					<p>Gymove Fitness Admin Dashboard
+					<p>© 2020 All Rights Reserved</p>
+					<p>Made with ❤️️ by Peterdraw</p>
+				</div>
+			</div>
+
+		</div>
+		<!--контейнер основного контенту-->
+		<div class="ah-content">
+			<!--контейнер хедеру-->
+			<div class="ah-header">
+					<div class="ah-header-navbar">
+						<a class="ah-header-hamburger" href="#"><img src="svg/hamburgermenu.svg" alt=""></a>
+						<a class="dashboard" href="#">Dashboard</a>
+					</div>
+					<div>
+						<a href="#">
+							<form action="#">
+								<input class="ah-input-text" type="search" placeholder="Find something here..."></input>
+							</form>
+						</a>
+					</div>
+					<div class="ah-header-icon">
+						<a class="ah-header-link" href="#"><img src="svg/Group 9.svg" alt="header bell icon"
+								class="ah-header-group-icon"></a>
+						<a class="ah-header-link" href="#"><img src="svg/Group 8.svg" alt="header chat icon"
+								class="ah-header-group-icon"></a>
+						<a class="ah-header-link" href="#"><img src="svg/Group 7.svg" alt="header bonus icon"
+								class="ah-header-group-icon"></a>
+						<a class="ah-header-link-user" href="#"><img src="svg/profilePicture.svg" alt="user avatar"></a>
+						<div class="ah-user-block">
+							<span class="user-name">Peter Parkur</span>
+							<span class="user-status">Super Admin</span>
+						</div>
+					</div>
+			</div>
+			<!--контейнер статистики-->
+			<div class="ah-statistic">
+				<!--контейнер статистики-->
+				<div class="ah-statistic_info rounded bg-light">
+					<h1>Інфо статистики(ah-statistic_info)</h1>
+				</div>
+				<!--контейнер графіку статистики-->
+				<div class="ah-statistic_chart rounded bg-light">
+					<section class="canvas-chart-1">
+						<header class="ah-canvas-header">
+							<div>
+								<h3>Workout Statistic</h3>
+								<span>Lorem ipsum dolor sit amet, consectetur</span>
+							</div>
+							<button class="ah-btn-submit"><span>Running</span></button>
+						</header>
+						<canvas class="chart-1" id="Chart-1"></canvas>
+					</section>
+				</div>
+			</div>
+			<!--контейнер інформації-->
+			<div class="ah-info">
+				<!--контейнер інформації блок 1-->
+				<div class="ah-info-one">
+					<!--контейнер рекомендованих тренерів-->
+					<div class="ah-info-one_trainers rounded bg-light">
+						<section class="ah-horizontal-block">
+							<header class="ah-canvas-header">
+								<div>
+									<h3>Recomended Trainer for You</h3>
+									<span>Lorem ipsum dolor sit amet, consectetur</span>
+								</div>
+								<button class="ah-btn-submit"><span>View More</span></button>
+							</header>
+							<div class="ah-horizontal-flex">
+								<div class="ah-profile-block">
+									<img src="svg/profilePicture2.svg" alt="profile avatar">
+									<span class="user-name">Peter Parkur</span>
+									<span class="user-status">Super Admin</span>
+									<div class="ah-rating">
+										<img src="svg/rating.svg" alt="">
+										<span>Send Request</span>
+									</div>
+								</div>
+								<div class="ah-profile-block">
+									<img src="svg/profilePicture2.svg" alt="profile avatar">
+									<span class="user-name">Peter Parkur</span>
+									<span class="user-status">Super Admin</span>
+									<div class="ah-rating">
+										<img src="svg/rating.svg" alt="">
+										<span>Send Request</span>
+									</div>
+								</div>
+								<div class="ah-profile-block">
+									<img src="svg/profilePicture2.svg" alt="profile avatar">
+									<span class="user-name">Peter Parkur</span>
+									<span class="user-status">Super Admin</span>
+									<div class="ah-rating">
+										<img src="svg/rating.svg" alt="">
+										<span>Send Request</span>
+									</div>
+								</div>
+								<div class="ah-profile-block">
+									<img src="svg/profilePicture2.svg" alt="profile avatar">
+									<span class="user-name">Peter Parkur</span>
+									<span class="user-status">Super Admin</span>
+									<div class="ah-rating">
+										<img src="svg/rating.svg" alt="">
+										<span>Send Request</span>
+									</div>
+								</div>
+								<div>
+									<a href="#"><img src="svg/btn_next.svg" alt="button next"></a>
+								</div>
+							</div>
+						</section>
+
+					</div>
+					<!--контейнер графіку калорій-->
+					<div class="ah-info-one_calories rounded bg-light">
+						<section class="canvas-chart-2">
+							<header class="ah-canvas-header">
+								<div>
+									<h3>Calories Chart</h3>
+									<span>Lorem ipsum dolor sit amet, consectetur</span>
+								</div>
+								<button class="ah-btn-submit"><span>Weekly</span></button>
+							</header>
+							<canvas class="chart-2" id="Chart-2"></canvas>
+						</section>
+					</div>
+				</div>
+				<!--контейнер інформації блок 2-->
+				<div class="ah-info-second">
+					<div class="ah-info-second_diet-menu rounded bg-light">
+						<h1>Рекоменд діетичне меню(ah-info-second_diet-menu)</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://unpkg.com/chart.js@3.5.0/dist/chart.min.js"></script>
+<script src="js/javascript.js"></script>
+</body>
+</html>
