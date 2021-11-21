@@ -214,16 +214,80 @@ h2 {
 
 /*==========================СТИЛІ БЛОКУ INFO СТАТИСТИКИ===========================*/
 
-.ah-statistic_info {
+.ah-statistic-info {
 	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	background: inherit;
 	width: 46%;
 	height: 85%;
-	border: 1px solid #523e02; /* тільки для розробки*/
 }
+
+.ah-statistic-info_card {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 47%;
+	height: 44%;
+}
+
+.ah-statistic-info_card:nth-child(4) {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	background: #FFBC11;
+	color: #FFFFFF;
+	width: 47%;
+	height: 44%;
+}
+
+.ah-image-wrapper {
+	width: 5rem;
+}
+
+.ah-image-wrapper img {
+	width: 100%;
+	height: auto;
+}
+
+.ah-statistic-info_card div:nth-child(2) {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	margin-left: 1.5rem;
+}
+
+.ah-statistic-info_card p {
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.31rem;
+	letter-spacing: 0;
+	text-align: left;
+	color: #969BA0;
+}
+
+.ah-statistic-info_card:nth-child(4) p {
+	color: #FFFFFF;
+}
+
+/*Прогресбар*/
+/*.ah-bar-wrapper {
+	width: 90%;
+	background: #e7e7e7;
+}
+
+.ah-bar {
+	height: 0.31rem;
+	background: #27BC48;
+	width: 32%;
+}*/
 
 /*==========================СТИЛІ БЛОКУ CHART СТАТИСТИКИ===========================*/
 
-.ah-statistic_chart {
+.ah-statistic-chart {
 	display: flex;
 	width: 46%;
 	height: 85%;
@@ -323,13 +387,12 @@ h2 {
 		margin-top: 1.5rem;
 	}
 
-	.ah-statistic_info {
+	.ah-statistic-info {
 		width: 96%;
-		height: 45%;
-		/*min-height: auto; для динамічного контенту*/
+		min-height: auto;
 	}
 
-	.ah-statistic_chart {
+	.ah-statistic-chart {
 		width: 96%;
 		height: 45%;
 	}
@@ -360,7 +423,7 @@ h2 {
 
 @media only screen
 and (min-device-width: 576px)
-and (max-device-width: 768px) {
+and (max-device-width: 992px) {
 
 	html {
 		font-size: 12px;
@@ -373,13 +436,12 @@ and (max-device-width: 768px) {
 		margin-top: 1.5rem;
 	}
 
-	.ah-statistic_info {
+	.ah-statistic-info {
 		width: 96%;
-		height: 45%;
-		/*min-height: auto; для динамічного контенту*/
+		min-height: auto;
 	}
 
-	.ah-statistic_chart {
+	.ah-statistic-chart {
 		width: 96%;
 		height: 45%;
 	}
@@ -407,6 +469,17 @@ and (max-device-width: 768px) {
 		min-height: auto;
 	}
 }
+
+/*
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 992px) {
+
+	html {
+		font-size: 14px;
+	}
+}
+*/
 
 
 
