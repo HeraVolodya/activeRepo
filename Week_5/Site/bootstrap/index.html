@@ -8,60 +8,70 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="css/bootstrap.css" rel="stylesheet"> <!--Ломає дропдаун-->
 	<link href="css/dropdowns.css" rel="stylesheet"> <!--Ломає дропдаун-->
-	<link rel="stylesheet" href="styles/style.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style 2.css" rel="stylesheet">
 	<title>Document</title>
 </head>
 <body>
-	
-	<nav class="navbar navbar-expand-sm navbar-light bg-light">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#">activeHamsters</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					        aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item dropdown shadow rounded-3">
-								<a class="nav-link dropdown-toggle" href="#" id="dropdown-1" role="button"
-								   data-bs-toggle="dropdown" aria-expanded="false">
-									Dropdown v1
-								</a>
-								<ul class="dropdown-menu ah-dropdown_v1" aria-labelledby="dropdown-1">
-									<li>
-										<form class="p-1" action="">
-											<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
-										</form>
-									</li>
-									<li><a class="dropdown-item" href="#">Щось</a></li>
-									<li><a class="dropdown-item" href="#">Дещо</a></li>
-									<li><a class="dropdown-item" href="#">Що-небудь</a></li>
-									<li><a class="dropdown-item" href="#">Хоч щось</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown shadow rounded-3">
-								<a class="nav-link dropdown-toggle" href="#" id="dropdown-2" role="button"
-								   data-bs-toggle="dropdown" aria-expanded="false">
-									Dropdown v2
-								</a>
-								<ul class="dropdown-menu ah-dropdown_v2" aria-labelledby="dropdown-2">
-									<li>
-										<form class="p-1" action="">
-											<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
-										</form>
-									</li>
-									<li><a class="dropdown-item" href="#">Щось</a></li>
-									<li><a class="dropdown-item" href="#">Дещо</a></li>
-									<li><a class="dropdown-item" href="#">Що-небудь</a></li>
-									<li><a class="dropdown-item" href="#">Хоч щось</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+<!--НАВІГАЦІЯ-->
+<nav class="navbar navbar-expand-md navbar-black bg-black">
+	<div class="container">
+		<a href="#" class="navbar-brand">ActiveHamsters</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-corrent="page">FAQ</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Login</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Sign up</a>
+				</li>
+			</ul>
+
+			<form action="" class="d-flex">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown shadow rounded-3">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-1" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Пошук
+							</a>
+							<ul class="dropdown-menu ah-dropdown_v1" aria-labelledby="dropdown-1">
+								<li>
+									<form class="p-1" action="">
+										<input class="form-control" type="search" autocomplete="false" placeholder="Введіть текст...">
+									</form>
+								</li>
+								<li><a class="dropdown-item" href="#">Щось</a></li>
+								<li><a class="dropdown-item" href="#">Дещо</a></li>
+								<li><a class="dropdown-item" href="#">Що-небудь</a></li>
+								<li><a class="dropdown-item" href="#">Хоч щось</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<button type="submit" class="btn btn-outline-success">Search</button>
+			</form>
+		</div>
+	</div>
+</nav>
+
+<div class="ah-h2_v2">
+	<h2>Лінивий рандомайзер</h2>
+</div>
+
+<!--КАРУСЕЛЬ-->
 <div class="container-fluid">
 	
 		<div class="col-md-12 mt-5">
@@ -148,14 +158,21 @@
 	</div>
 	
 </div>
-	<!--Dark-->
+	<!--ДРОПДАУН-->
 	<div class="dropdown-menu dropdown-menu-dark p-2 shadow rounded-3" style="width: 340px" id="dropdownCalendar">
 		<div class="d-grid gap-1">
 			<div class="cal">
 				<div class="cal-month">
 					<button class="btn cal-btn-dark" type="button">
-						<svg class="bi" width="16" height="16">
-							<use xlink:href="#arrow-left-short" />
+						<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+							<symbol id="arrow-left-short" viewBox="0 0 16 16">
+								<path fill="#5a57ff"
+									d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+							</symbol>
+							<symbol id="arrow-right-short" viewBox="0 0 16 16">
+								<path fill="#5a57ff"
+									d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+							</symbol>
 						</svg>
 					</button>
 					<strong class="cal-month-name-dark">Листопад</strong>
@@ -383,109 +400,109 @@
     <div class="col-sm-12 col-lg-12 mb-3">
 
 
-			<!--НАВІГАЦІЯ ТАБ-1-->
-			<ul class="nav nav-pills ah-nav_v2" id="pills-tab_2" role="tablist">
-				<li class="nav-item" role="presentation">
-					<button
-						class="ah-link-button active"
-						id="about-tab_2"
-						data-bs-toggle="pill"
-						data-bs-target="#about-2"
-						type="button"
-						role="tab"
-						aria-controls="about_2"
-						aria-selected="true"
-					>
-						<span>Про гурт</span>
-					</button>
-				</li>
-
-				<li class="nav-item" role="presentation">
-					<button
-						class="ah-link-button"
-						id="photo-tab_2"
-						data-bs-toggle="pill"
-						data-bs-target="#photo-2"
-						type="button"
-						role="tab"
-						aria-controls="photo_2"
-						aria-selected="false"
-					>
-						<span>Фото</span>
-					</button>
-				</li>
-
-				<li class="nav-item" role="presentation">
-					<button
-						class="ah-link-button"
-						id="texts-tab_2"
-						data-bs-toggle="pill"
-						data-bs-target="#texts-2"
-						type="button"
-						role="tab"
-						aria-controls="texts_2"
-						aria-selected="false"
-					>
-						<span>Тексти</span>
-					</button>
-				</li>
-			</ul>
-			<!--НАВІГАЦІЯ ТАБ-1-->
-
-			<!--КОНТЕНТ ТАБ-2-->
-			<div class="tab-content ah-content-block_v2" id="pills-tabContent_2">
-				<div
-					class="tab-pane fade show active ah-tab-about"
-					id="about-2"
-					role="tabpanel"
-					aria-labelledby="about-tab_2"
+		<!--НАВІГАЦІЯ ТАБ-1-->
+		<ul class="nav nav-pills ah-nav_v2" id="pills-tab_2" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button
+					class="ah-link-button active"
+					id="about-tab_2"
+					data-bs-toggle="pill"
+					data-bs-target="#about-2"
+					type="button"
+					role="tab"
+					aria-controls="about_2"
+					aria-selected="true"
 				>
-					<p>
-						«Жадан і Собаки» — український рок-гурт із Харкова, що виник у
-						2000 році. Колектив брав участь у фестивалях «Таврійські ігри»,
-						«Раз. Liv», «Музичний Острів», «5 озер», «Мазепа-Фест», «День
-						Незалежності з Махном» та ін.
-					</p>
-				</div>
+					<span>Про гурт</span>
+				</button>
+			</li>
 
-				<div
-					class="tab-pane fade"
-					id="photo-2"
-					role="tabpanel"
-					aria-labelledby="photo-tab_2"
+			<li class="nav-item" role="presentation">
+				<button
+					class="ah-link-button"
+					id="photo-tab_2"
+					data-bs-toggle="pill"
+					data-bs-target="#photo-2"
+					type="button"
+					role="tab"
+					aria-controls="photo_2"
+					aria-selected="false"
 				>
-					<div class="ah-image-wrapper">
-						<img
-							class="img-fluid"
-							src="../images/zhadan1.jpg"
-							alt="Жадан і собаки"
-						/>
-					</div>
-				</div>
+					<span>Фото</span>
+				</button>
+			</li>
 
-				<div
-					class="tab-pane fade ah-tab-texts"
-					id="texts-2"
-					role="tabpanel"
-					aria-labelledby="texts-tab_2"
+			<li class="nav-item" role="presentation">
+				<button
+					class="ah-link-button"
+					id="texts-tab_2"
+					data-bs-toggle="pill"
+					data-bs-target="#texts-2"
+					type="button"
+					role="tab"
+					aria-controls="texts_2"
+					aria-selected="false"
 				>
-					<div class="ah-text-wrapper">
-						<p>
-							Рушаємо, Ребе, нічною залізницею – Вночі вокзали пахнуть
-							смертю і корицею. Жінки лягають спати з духами-іконами Давай
-							вибиратися товарними вагонами. Вантаж у вагони свою параною,
-							За чорним утомленим Сатаною, Пропащі душі, спотворені лиця,
-							Куди нас вивезе наша залізниця?
-						</p>
-						<a
-							href="https://www.pisni.org.ua/songs/4383389.html"
-							target="_blank"
-						><span>Посилання на інші тексти</span></a
-						>
-					</div>
+					<span>Тексти</span>
+				</button>
+			</li>
+		</ul>
+		<!--НАВІГАЦІЯ ТАБ-1-->
+
+		<!--КОНТЕНТ ТАБ-2-->
+		<div class="tab-content ah-content-block_v2" id="pills-tabContent_2">
+			<div
+				class="tab-pane fade show active ah-tab-about"
+				id="about-2"
+				role="tabpanel"
+				aria-labelledby="about-tab_2"
+			>
+				<p>
+					«Жадан і Собаки» — український рок-гурт із Харкова, що виник у
+					2000 році. Колектив брав участь у фестивалях «Таврійські ігри»,
+					«Раз. Liv», «Музичний Острів», «5 озер», «Мазепа-Фест», «День
+					Незалежності з Махном» та ін.
+				</p>
+			</div>
+
+			<div
+				class="tab-pane fade"
+				id="photo-2"
+				role="tabpanel"
+				aria-labelledby="photo-tab_2"
+			>
+				<div class="ah-image-wrapper">
+					<img
+						class="img-fluid"
+						src="../images/zhadan1.jpg"
+						alt="Жадан і собаки"
+					/>
 				</div>
 			</div>
-			<!--КОНТЕНТ ТАБ-2-->
+
+			<div
+				class="tab-pane fade ah-tab-texts"
+				id="texts-2"
+				role="tabpanel"
+				aria-labelledby="texts-tab_2"
+			>
+				<div class="ah-text-wrapper">
+					<p>
+						Рушаємо, Ребе, нічною залізницею – Вночі вокзали пахнуть
+						смертю і корицею. Жінки лягають спати з духами-іконами Давай
+						вибиратися товарними вагонами. Вантаж у вагони свою параною,
+						За чорним утомленим Сатаною, Пропащі душі, спотворені лиця,
+						Куди нас вивезе наша залізниця?
+					</p>
+					<a
+						href="https://www.pisni.org.ua/songs/4383389.html"
+						target="_blank"
+					><span>Посилання на інші тексти</span></a
+					>
+				</div>
+			</div>
+		</div>
+		<!--КОНТЕНТ ТАБ-2-->
      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
