@@ -58,8 +58,6 @@
 		<!--контейнер основного контенту-->
 		<div class="ah-content">
 			<!--контейнер хедеру-->
-
-
 			<div class="ah-header">
 				<!--контейнер ссилки-назви сторінки-->
 				<div class="ah-header-navbar">
@@ -80,14 +78,13 @@
 					                                        class="ah-header-group-icon"></a>
 					<div class="ah-user-block">
 						<a class="ah-header-link-user" href="#"><img src="svg/profilePicture.svg" alt="user avatar"></a>
-						<div  class="ah-user-block_name">
+						<div class="ah-user-block_name">
 							<span class="user-name"><b>Peter Parkur</b></span>
 							<span class="user-status">Super Admin</span>
 						</div>
 					</div>
 				</div>
 			</div>
-
 
 			<!--контейнер статистики-->
 			<div class="ah-statistic">
@@ -136,7 +133,16 @@
 				</div>
 				<!--контейнер графіку статистики-->
 				<div class="ah-statistic-chart rounded bg-light">
-					<h1>Графік статистики(ah-statistic-chart)</h1>
+					<div class="ah-statistic-chart_header">
+						<div>
+							<h3>Workout Statistic</h3>
+							<span>Lorem ipsum dolor sit amet, consectetur</span>
+						</div>
+						<button class="ah-btn-submit"><span>Running</span></button>
+					</div>
+					<div class="ah-statistic-chart_canvas">
+						<canvas id="chart-1"></canvas>
+					</div>
 				</div>
 			</div>
 			<!--контейнер інформації-->
@@ -162,5 +168,7 @@
 		</div>
 	</div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+<script src="js/javascript.js"></script>
 </body>
 </html>
