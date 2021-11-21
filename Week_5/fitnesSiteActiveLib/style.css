@@ -194,11 +194,76 @@ h2 {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
+	align-items: center;
 	max-width: 100%;
-	background: #FFFFFF;
+	background: #ffffff;
 	z-index: 2;
-	height: 7.5rem;
-	border-bottom: 1px solid #0dcaf0; /* тільки для розробки*/
+}
+
+.ah-header-navbar,
+.ah-header-icon,
+.ah-search-form {
+	display: flex;
+	align-items: center;
+}
+
+.ah-search-form {
+	width: 32%;
+}
+
+.ah-header-icon {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 0 1rem 0 1rem;
+}
+
+.ah-dashboard-link {
+	margin: 0 1rem 0 1rem;
+	text-decoration: none;
+	color: #000000;
+}
+
+/*Розмір, закруглення, зовнішні та внутрішні відступи, колір фону плейсхолдера*/
+.ah-input-text {
+	width: 100%;
+	color: #8d8d8d;
+	padding: 1rem;
+	font-size: 1rem;
+	background-color: #f3f3f3;
+	border-radius: 9px;
+	border: none;
+	margin: 0.5rem;
+}
+
+/*Зміна кольору тексту placeholder*/
+input[type="text"]::-webkit-input-placeholder {
+	color: #8d8d8d;
+}
+
+/*Розташовує ім'я користувача і статус в стовпчик та додає відступ від аватарки*/
+.ah-user-block {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.ah-user-block_name {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: start;
+}
+
+/*Додає відстпупи між іконки зправа*/
+.ah-header-link,
+.ah-header-link-user {
+	width: 4.25rem;
+	margin: 1rem;
+}
+
+.ah-header-group-icon,
+.ah-header-link-user img {
+	width: 100%;
+	height: auto;
 }
 
 /*==========================СТИЛІ БЛОКУ СТАТИСТИКИ===========================*/
@@ -380,6 +445,15 @@ h2 {
 		margin-bottom: 2rem;
 	}
 
+	.ah-header {
+		flex-flow: column nowrap;
+		justify-content: space-between;
+	}
+
+	.ah-search-form {
+		width: 100%;
+	}
+
 	.ah-statistic {
 		flex-flow: column nowrap;
 		justify-content: space-between;
@@ -423,10 +497,27 @@ h2 {
 
 @media only screen
 and (min-device-width: 576px)
-and (max-device-width: 992px) {
+and (max-device-width: 993px) {
 
 	html {
 		font-size: 12px;
+	}
+
+	.ah-header {
+		flex-flow: row wrap;
+	}
+
+	.ah-header-navbar {
+		width: 30%;
+	}
+
+	.ah-search-form {
+		width: 70%;
+	}
+
+	.ah-header-icon {
+		width: 100%;
+		justify-content: space-evenly;
 	}
 
 	.ah-statistic {
@@ -449,7 +540,6 @@ and (max-device-width: 992px) {
 	.ah-info {
 		flex-flow: column nowrap;
 		min-height: auto;
-		/*height: unset;*/
 	}
 
 	.ah-info-one {
@@ -470,16 +560,29 @@ and (max-device-width: 992px) {
 	}
 }
 
-/*
 @media only screen
-and (min-device-width: 768px)
-and (max-device-width: 992px) {
+and (min-device-width: 992px)
+and (max-device-width: 1199px) {
 
-	html {
-		font-size: 14px;
+	.ah-header {
+		flex-flow: row wrap;
+	}
+
+	.ah-header-navbar {
+		order: 1;
+		width: 30%;
+	}
+
+	.ah-header-icon {
+		order: 2;
+		width: 70%;
+	}
+
+	.ah-search-form {
+		order: 3;
+		width: 100%;
 	}
 }
-*/
 
 
 
