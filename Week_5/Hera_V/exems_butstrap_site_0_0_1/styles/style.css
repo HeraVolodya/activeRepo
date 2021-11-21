@@ -1,0 +1,22 @@
+body {
+  background: #F5F9F1;
+}
+.nav .btn:hover {
+  background-color: #E8EBF6;
+  color: #0B2A97;
+  border-right: 6px solid #0B2A97;
+  border-radius: 10px  0px  0px 10px;
+}
+.nav_btn_grup .btn {
+  background-color: #E9EEFF;
+  border-radius: 10px;
+}
+.col-md-6 div {
+  background-color: red;
+}
+#col_sportsBlocks {
+  background-color: white;
+}
+#col_sportsBlocks:hover {
+  background-color: yellow;
+}
