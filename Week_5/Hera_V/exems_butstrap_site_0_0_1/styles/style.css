@@ -1,7 +1,11 @@
 body {
   background: #F5F9F1;
 }
-.nav .btn:hover {
+.nav-pills .btn {
+  width: 360px;
+  font-size: 24px;
+}
+.nav-pills .btn:hover {
   background-color: #E8EBF6;
   color: #0B2A97;
   border-right: 6px solid #0B2A97;
@@ -11,6 +15,15 @@ body {
   background-color: #E9EEFF;
   border-radius: 10px;
 }
+.nav_btn_grup #btnCalendar {
+  background-color: red;
+  top: 900px;
+}
+#btnCalendar {
+  background-color: #0B2A97;
+  color: white;
+  top: 900px;
+}
 .col-md-6 div {
   background-color: red;
 }
@@ -19,4 +32,19 @@ body {
 }
 #col_sportsBlocks:hover {
   background-color: yellow;
+}
+.form-select {
+  background-color: #F5F5F5;
+}
+.form-select {
+  background-color: #F5F5F5;
+}
+.col-sm-6 .btn-lg {
+  background-color: #F5F5F5;
+}
+#biBlue {
+  color: #0B2A97;
+}
+#biRed {
+  color: #fd0101;
 }
