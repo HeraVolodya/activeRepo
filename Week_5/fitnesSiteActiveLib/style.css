@@ -290,22 +290,29 @@ input[type="text"]::-webkit-input-placeholder {
 
 .ah-statistic-info_card {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	width: 47%;
 	height: 44%;
 }
 
-.ah-statistic-info_card:nth-child(4) {
+.ah-content-wrapper {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
+	align-self: center;
+	margin-top: auto;
+}
+
+.ah-statistic-info_card:nth-child(4) {
 	background: #FFBC11;
 	color: #FFFFFF;
-	width: 47%;
-	height: 44%;
+}
+
+.ah-statistic-info_card:nth-child(4) p {
+	color: #FFFFFF;
 }
 
 .ah-image-wrapper {
@@ -317,14 +324,14 @@ input[type="text"]::-webkit-input-placeholder {
 	height: auto;
 }
 
-.ah-statistic-info_card div:nth-child(2) {
+.ah-content-wrapper div:nth-child(2) {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	margin-left: 1.5rem;
 }
 
-.ah-statistic-info_card p {
+.ah-content-wrapper p {
 	font-size: 0.87rem;
 	font-style: normal;
 	font-weight: 400;
@@ -334,21 +341,45 @@ input[type="text"]::-webkit-input-placeholder {
 	color: #969BA0;
 }
 
-.ah-statistic-info_card:nth-child(4) p {
-	color: #FFFFFF;
-}
-
 /*Прогресбар*/
-/*.ah-bar-wrapper {
-	width: 90%;
+.ah-bar-wrapper {
+	width: 94%;
 	background: #e7e7e7;
+	margin-top: auto;
+	margin-bottom: 0;
 }
 
 .ah-bar {
 	height: 0.31rem;
+	border-radius: 0.2rem;
+}
+
+.ah-statistic-info_card:nth-child(1) .ah-bar {
 	background: #27BC48;
 	width: 32%;
-}*/
+}
+
+.ah-statistic-info_card:nth-child(2) .ah-bar {
+	background: #A02CFA;
+	width: 72%;
+}
+
+.ah-statistic-info_card:nth-child(3) .ah-bar {
+	background: #FF3282;
+	width: 86%;
+}
+
+.ah-statistic-info_card:nth-child(4) .ah-bar-wrapper {
+	margin-top: auto;
+	margin-bottom: 0;
+	width: 94%;
+	background: #FFD976;
+}
+
+.ah-statistic-info_card:nth-child(4) .ah-bar {
+	background: #FBF4DD;
+	width: 31%;
+}
 
 /*==========================СТИЛІ БЛОКУ CHART СТАТИСТИКИ===========================*/
 
