@@ -30,14 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
           {
             data: [25, 50, 20, 35, 20, 65, 48, 60],
             borderColor: '#0B2A97',
-            borderWidth: '9',
+            borderWidth: '7',
             cubicInterpolationMode: 'monotone'
           }
         ]
       },
     }
   );
-})
+});
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -50,35 +50,40 @@ document.addEventListener('DOMContentLoaded', () => {
         datasets: [
           {
             label: 'Calories',
-            data: [50, 65, 30, 10, 60, 30, 3, 40, 20, 50, 20, 50, 65, 30, 10, 60, 30, 3, 45, 30],
+            data: [50, 70, 30, 13, 62, 30, 3, 43, 24, 45, 24, 45, 70, 30, 13, 62, 30, 3, 42, 30],
             backgroundColor: '#0B2A97',
             borderRadius: 20,
-            order: 1
+            order: 1,
+            categoryPercentage: 1.0,
+            barPercentage: 0.2
           },
           {
             label: 'Calories burn',
-            data: [-3, -20, -40, -10, -20, -40, -30, -15, -30, -15, -25, -3, -20, -40, -10, -20, -40, -30, -20, -40],
+            data: [-3, -18, -38, -8, -18, -42, -30, -16, -30, -16, -25, -3, -18, -38, -8, -18, -42, -30, -16, -42],
             backgroundColor: '#FF9432',
             borderRadius: 20,
-
-          }
-
-        ]
+            categoryPercentage: 1.0,
+            barPercentage: 0.2
+          }]
       },
       options: {
         responsive: true,
-        scales: {
-          y: {
-            stacked: true,
-            beginAtZero: true,
+        plugins: {
+          legend: {
+            display: false,
           },
-          x: {
-            stacked: true,
-          }
+          scales: {
+            y: {
+              stacked: true,
+              beginAtZero: true,
+            },
+            x: {
+              stacked: true,
+            }
 
+          }
         }
       }
-    }
-  );
+  });
 
-})
+});
