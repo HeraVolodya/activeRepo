@@ -183,7 +183,7 @@ h2 {
 	display: flex;
 	flex-flow: column nowrap;
 	flex: 82%;
-	max-width: 100%;
+	width: 100%;
 	height: 100%;
 	background: #f5f9f1;
 }
@@ -273,7 +273,7 @@ input[type="text"]::-webkit-input-placeholder {
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-	max-width: 100%;
+	width: 100%;
 	height: 21rem;
 }
 
@@ -402,12 +402,6 @@ input[type="text"]::-webkit-input-placeholder {
 	margin-bottom: 0;
 }
 
-.ah-statistic-chart_canvas {
-	/*
-		width: 100%;
-		height: 50%;*/
-}
-
 /*Налаштування кнопок*/
 .ah-btn-submit {
 	color: #0b2a97;
@@ -418,21 +412,6 @@ input[type="text"]::-webkit-input-placeholder {
 	text-align: center;
 	border-radius: 9px;
 	border: none;
-	/* border: 1px solid #ffffff; */
-	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-}
-
-/*Альтернативні налаштування кнопок графіку*/
-.canvas-chart-2 .ah-btn-submit {
-	color: #ffffff;
-	font-weight: 700;
-	padding: 1rem;
-	font-size: 1rem;
-	background-color: #0b2a97;
-	text-align: center;
-	border-radius: 9px;
-	border: none;
-	/* border: 1px solid #ffffff; */
 	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
@@ -454,15 +433,132 @@ input[type="text"]::-webkit-input-placeholder {
 	justify-content: space-around;
 	align-items: center;
 	width: 78%;
-	/*	border: 1px solid #664d03;*/ /* тільки для розробки*/
 }
 
 /*==========================СТИЛІ БЛОКУ 1 РЕКОМ. ТРЕНЕРІВ===========================*/
 
 .ah-info-one_trainers {
+	display: flex;
+	flex-flow: column nowrap;
 	width: 95%;
 	height: 40%;
-	border: 1px solid #fd7e14; /* тільки для розробки*/
+}
+
+.ah-trainers-header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top: 1.87rem;
+	padding: 1rem;
+}
+
+.ah-trainers-header div {
+	margin-left: 1.87rem;
+}
+
+.ah-btn-trainers {
+	background: #0b2a97;
+	width: 8.87rem;
+	border-radius: 1.5rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	margin-right: 1.87rem;
+	border: none;
+}
+
+.ah-btn-trainers span {
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	margin: 0 auto;
+	color: #FFFFFF;
+}
+
+.ah-trainers-block {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	height: 70%;
+}
+
+.ah-trainers-block_item {
+	display: flex;
+	width: 20%;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	background: inherit;
+	border-radius: 1.8rem;
+}
+
+.ah-button-wrapper {
+	vertical-align: center;
+}
+
+.ah-button-next {
+	background-color: #ffffff;
+	border-radius: 50%;
+	align-self: center;
+	width: 4.25rem;
+	height: 4.25rem;
+	border: none;
+	box-shadow: 0 0.81rem 1.37rem rgba(0, 0, 0, 0.12);
+}
+
+.ah-trainers-block_item:hover {
+	box-shadow: 0 0.62rem 1.37rem rgba(0, 0, 0, 0.08);
+}
+
+.ah-trainers-img-wrapper {
+	width: 7rem;
+}
+
+.ah-trainers-img-wrapper img {
+	width: 100%;
+	height: auto;
+}
+
+.user-name {
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	text-align: center;
+	color: #000000;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.user-status {
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.31rem;
+	letter-spacing: 0;
+	text-align: left;
+	color: #969BA0;
+}
+
+.ah-rating {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #0b2a97;
+	font-weight: 500;
+	padding-top: 1rem;
+}
+
+.ah-rating img {
+	width: 3rem;
+}
+
+.ah-rating span {
+	padding-left: 1rem;
+	margin-left: 1rem;
+	border-left: 1px solid #E2E2E2;
 }
 
 /*==========================СТИЛІ БЛОКУ 1 ГРАФІКУ КАЛОРІЙ===========================*/
@@ -489,10 +585,92 @@ input[type="text"]::-webkit-input-placeholder {
 .ah-info-second_diet-menu {
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-around;
+	justify-content: flex-start;
 	width: 91%;
 	height: 95%;
-	border: 1px solid #565e64; /* тільки для розробки*/
+}
+
+.ah-diet-menu-header {
+	margin-top: 2.62rem;
+	margin-left: 1rem;
+}
+
+.ah-diet-menu-header h3 {
+	text-align: left;
+	margin-bottom: 2.37rem;
+}
+
+.ah-diet-menu-item {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 1rem;
+	margin-bottom: 2.62rem;
+}
+
+.ah-diet-menu-item_main {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.ah-diet-menu-item_main div {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.dish-name {
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	text-align: left;
+	margin-bottom: 1rem;
+	color: #000000;
+}
+
+.user {
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.31rem;
+	letter-spacing: 0;
+	text-align: left;
+	color: #0B2A97;
+}
+
+.ah-diet-menu-item_second {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.ah-diet-menu-item_second div {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.ah-diet-menu-item_second div:nth-child(2) {
+	justify-content: flex-start;
+	width: 50%;
+}
+
+.ah-diet-menu-item_second span {
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.31rem;
+	letter-spacing: 0;
 }
 
 @media (max-width: 575px) {
@@ -536,6 +714,7 @@ input[type="text"]::-webkit-input-placeholder {
 		justify-content: space-between;
 		align-items: center;
 		margin-top: 1.5rem;
+		margin-bottom: 3rem;
 	}
 
 	.ah-statistic-info {
@@ -602,6 +781,8 @@ and (max-device-width: 993px) {
 		justify-content: space-around;
 		align-items: center;
 		margin-top: 1.5rem;
+		height: unset;
+		min-height: auto;
 	}
 
 	.ah-statistic-info {
@@ -617,23 +798,45 @@ and (max-device-width: 993px) {
 	.ah-info {
 		flex-flow: column nowrap;
 		min-height: auto;
+		height: unset;
 	}
 
 	.ah-info-one {
+		min-height: auto;
 		width: 100%;
+	}
+
+	.ah-info-one_trainers {
+		width: 90%;
+		margin-top: 1.5rem;
 	}
 
 	.ah-info-second {
 		flex-flow: column nowrap;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
 		min-height: auto;
+		width: 100%;
 	}
 
 	.ah-info-second_diet-menu {
-		width: 95%;
+		flex-flow: row nowrap;
+		justify-content: center;
+		width: unset;
+		height: unset;
 		min-height: auto;
+	}
+
+	.ah-diet-menu-header {
+		width: 100%;
+	}
+
+	.ah-diet-menu-item_main {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		margin-left: unset;
+		margin-right: unset;
 	}
 }
 
@@ -661,6 +864,30 @@ and (max-device-width: 1199px) {
 	}
 }
 
+@media only screen
+and (min-device-width: 992px)
+and (max-device-width: 1400px) {
 
+	.ah-info-second_diet-menu {
+		height: unset;
+		min-height: auto;
+	}
 
+	.ah-diet-menu-item_main {
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
 
+	.ah-diet-menu-header {
+		margin-top: 0.5rem;
+	}
+
+	.ah-diet-menu-item {
+		margin-bottom: 0.5rem;
+	}
+
+	.ah-diet-menu-item_second {
+		margin-top: 0.5rem;
+	}
+}
