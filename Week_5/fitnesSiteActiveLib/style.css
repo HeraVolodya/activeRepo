@@ -566,7 +566,6 @@ input[type="text"]::-webkit-input-placeholder {
 .ah-info-one_calories {
   width: 95%;
   height: 50%;
-  border: 1px solid #9202f8; /* тільки для розробки*/
 }
 
 /*==========================СТИЛІ БЛОКУ 2 INFO ===========================*/
