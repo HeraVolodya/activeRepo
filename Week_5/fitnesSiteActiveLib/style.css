@@ -1,883 +1,892 @@
 /*==========================СТИЛІ ЗАГАЛЬНІ===========================*/
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
 h1 {
-  font-size: 1.75rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 2.62rem;
-  letter-spacing: 0;
-  text-align: left;
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 2.62rem;
+	letter-spacing: 0;
+	text-align: left;
 }
 
 h2 {
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.87rem;
-  letter-spacing: 0;
-  text-align: left;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.87rem;
+	letter-spacing: 0;
+	text-align: left;
 }
 
 .rounded {
-  border-radius: 1.2rem;
+	border-radius: 1.2rem;
 }
 
 .bg-light {
-  background: #ffffff;
+	background: #ffffff;
 }
 
 .ah-container {
-  height: 100%;
-  max-width: 100%;
-  border-bottom: 1px solid blue; /* тільки для розробки*/
+	height: 100%;
+	max-width: 100%;
 }
 
 .ah-main {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  height: 100%; /* тільки для розробки*/
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	height: 100%; /* тільки для розробки*/
 }
 
 /*==========================СТИЛІ САЙДБАРУ===========================*/
 
 .ah-sidebar {
-  display: flex;
-  flex-flow: column nowrap;
-  max-width: 100%;
-  height: 100%;
-  flex: 18%;
+	display: flex;
+	flex-flow: column nowrap;
+	max-width: 100%;
+	height: 100%;
+	flex: 18%;
 }
 
 .ah-sidebar-logo {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
 }
 
 .ah-sidebar-logo h1 {
-  margin-left: 1.5rem;
+	margin-left: 1.5rem;
 }
 
 .ah-sidebar-logo span {
-  color: #0b2a97;
+	color: #0b2a97;
 }
 
 .ah-sidebar h2 {
-  margin-top: 3rem;
-  margin-left: 3.12rem;
+	margin-top: 3rem;
+	margin-left: 3.12rem;
 }
 
 .ah-sidebar-nav {
-  margin-top: 1.25rem;
-  display: flex;
-  flex-flow: column nowrap;
+	margin-top: 1.25rem;
+	display: flex;
+	flex-flow: column nowrap;
 }
 
 .ah-sidebar-nav_link {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
-  padding-top: 1.37rem;
-  padding-bottom: 1.37rem;
-  padding-left: 3.37rem;
-  text-align: left;
-  background: #ffffff;
+	display: flex;
+	flex-direction: row;
+	margin-top: 1rem;
+	padding-top: 1.37rem;
+	padding-bottom: 1.37rem;
+	padding-left: 3.37rem;
+	text-align: left;
+	background: #ffffff;
 }
 
 .ah-sidebar-nav_link a {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-  text-align: left;
-  color: #757575;
-  text-decoration: none;
-  margin-left: 1.56rem;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	text-align: left;
+	color: #757575;
+	text-decoration: none;
+	margin-left: 1.56rem;
 }
 
 .ah-sidebar-nav_link:hover {
-  background: #e8ebf6;
-  border-right: 6px solid #0b2a97;
-  margin-left: 1.75rem;
-  padding-left: 1.6rem;
-  border-radius: 1rem 0 0 1rem;
+	background: #e8ebf6;
+	border-right: 6px solid #0b2a97;
+	margin-left: 1.75rem;
+	padding-left: 1.6rem;
+	border-radius: 1rem 0 0 1rem;
 }
 
 .ah-sidebar-nav_link:hover a {
-  color: #0b2a97;
+	color: #0b2a97;
 }
 
 .ah-button-container,
 .ah-footer-container {
-  display: flex;
-  flex-direction: column;
-  margin-top: 6rem;
+	display: flex;
+	flex-direction: column;
+	margin-top: 6rem;
 }
 
 .ah-plan-button {
-  display: flex;
-  max-width: 71%;
-  flex-flow: row nowrap;
-  align-items: center;
-  background: #0b2a97;
-  margin: 0 auto;
-  padding: 1.5rem 1.2rem 1.5rem 1.12rem;
-  border-radius: 1rem;
+	display: flex;
+	max-width: 71%;
+	flex-flow: row nowrap;
+	align-items: center;
+	background: #0b2a97;
+	margin: 0 auto;
+	padding: 1.5rem 1.2rem 1.5rem 1.12rem;
+	border-radius: 1rem;
 }
 
 .ah-plan-button p {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-  text-align: left;
-  margin-left: 1rem;
-  color: #ffffff;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	text-align: left;
+	margin-left: 1rem;
+	color: #ffffff;
 }
 
 .ah-footer {
-  display: flex;
-  min-width: 71%;
-  flex-flow: column nowrap;
-  align-items: start;
-  background: inherit;
-  margin: 0 auto;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.13rem;
-  letter-spacing: 0;
-  color: #969ba0;
+	display: flex;
+	min-width: 71%;
+	flex-flow: column nowrap;
+	align-items: start;
+	background: inherit;
+	margin: 0 auto;
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.13rem;
+	letter-spacing: 0;
+	color: #969ba0;
 }
 
 .ah-footer p:nth-child(1) {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 .ah-footer p:nth-child(2) {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 .ah-footer p:nth-child(3) {
-  font-weight: 400;
-  margin-top: 1rem;
+	font-weight: 400;
+	margin-top: 1rem;
 }
 
 /*==========================СТИЛІ ПРАВОГО БЛОКУ КОНТЕНТУ===========================*/
 
 .ah-content {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 82%;
-  width: 100%;
-  height: 100%;
-  background: #f5f9f1;
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 82%;
+	width: 100%;
+	height: 100%;
+	background: #f5f9f1;
 }
 
 /*==========================СТИЛІ ХЕДЕРУ===========================*/
 
 .ah-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 100%;
-  background: #ffffff;
-  z-index: 2;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 100%;
+	background: #ffffff;
+	z-index: 2;
 }
 
 .ah-header-navbar,
 .ah-header-icon,
 .ah-search-form {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .ah-search-form {
-  width: 32%;
+	width: 32%;
 }
 
 .ah-header-icon {
-  display: flex;
-  flex-flow: row nowrap;
-  margin: 0 1rem 0 1rem;
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 0 1rem 0 1rem;
 }
 
 .ah-dashboard-link {
-  margin: 0 1rem 0 1rem;
-  text-decoration: none;
-  color: #000000;
+	margin: 0 1rem 0 1rem;
+	text-decoration: none;
+	color: #000000;
 }
 
 /*Розмір, закруглення, зовнішні та внутрішні відступи, колір фону плейсхолдера*/
 .ah-input-text {
-  width: 100%;
-  color: #8d8d8d;
-  padding: 1rem;
-  font-size: 1rem;
-  background-color: #f3f3f3;
-  border-radius: 9px;
-  border: none;
-  margin: 0.5rem;
+	width: 100%;
+	color: #8d8d8d;
+	padding: 1rem;
+	font-size: 1rem;
+	background-color: #f3f3f3;
+	border-radius: 9px;
+	border: none;
+	margin: 0.5rem;
 }
 
 /*Зміна кольору тексту placeholder*/
 input[type="text"]::-webkit-input-placeholder {
-  color: #8d8d8d;
+	color: #8d8d8d;
 }
 
 /*Розташовує ім'я користувача і статус в стовпчик та додає відступ від аватарки*/
 .ah-user-block {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
 }
 
 .ah-user-block_name {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: start;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: start;
 }
 
 /*Додає відстпупи між іконки зправа*/
 .ah-header-link,
 .ah-header-link-user {
-  width: 4.25rem;
-  margin: 1rem;
+	width: 4.25rem;
+	margin: 1rem;
 }
 
 .ah-header-group-icon,
 .ah-header-link-user img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 /*==========================СТИЛІ БЛОКУ СТАТИСТИКИ===========================*/
 
 .ah-statistic {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 21rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 21rem;
 }
 
 /*==========================СТИЛІ БЛОКУ INFO СТАТИСТИКИ===========================*/
 
 .ah-statistic-info {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  background: inherit;
-  width: 46%;
-  height: 85%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	background: inherit;
+	width: 46%;
+	height: 85%;
 }
 
 .ah-statistic-info_card {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 47%;
-  height: 44%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 47%;
+	height: 44%;
 }
 
 .ah-content-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  margin-top: auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	margin-top: auto;
 }
 
 .ah-statistic-info_card:nth-child(4) {
-  background: #ffbc11;
-  color: #ffffff;
+	background: #ffbc11;
+	color: #ffffff;
 }
 
 .ah-statistic-info_card:nth-child(4) p {
-  color: #ffffff;
+	color: #ffffff;
 }
 
 .ah-image-wrapper {
-  width: 5rem;
+	width: 5rem;
 }
 
 .ah-image-wrapper img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .ah-content-wrapper div:nth-child(2) {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  margin-left: 1.5rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	margin-left: 1.5rem;
 }
 
 .ah-content-wrapper p {
-  font-size: 0.87rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.31rem;
-  letter-spacing: 0;
-  text-align: left;
-  color: #969ba0;
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.31rem;
+	letter-spacing: 0;
+	text-align: left;
+	color: #969ba0;
 }
 
 /*Прогресбар*/
 .ah-bar-wrapper {
-  width: 94%;
-  background: #e7e7e7;
-  margin-top: auto;
-  margin-bottom: 0;
+	width: 94%;
+	background: #e7e7e7;
+	margin-top: auto;
+	margin-bottom: 0;
 }
 
 .ah-bar {
-  height: 0.31rem;
-  border-radius: 0.2rem;
+	height: 0.31rem;
+	border-radius: 0.2rem;
 }
 
 .ah-statistic-info_card:nth-child(1) .ah-bar {
-  background: #27bc48;
-  width: 32%;
+	background: #27bc48;
+	width: 32%;
 }
 
 .ah-statistic-info_card:nth-child(2) .ah-bar {
-  background: #a02cfa;
-  width: 72%;
+	background: #a02cfa;
+	width: 72%;
 }
 
 .ah-statistic-info_card:nth-child(3) .ah-bar {
-  background: #ff3282;
-  width: 86%;
+	background: #ff3282;
+	width: 86%;
 }
 
 .ah-statistic-info_card:nth-child(4) .ah-bar-wrapper {
-  margin-top: auto;
-  margin-bottom: 0;
-  width: 94%;
-  background: #ffd976;
+	margin-top: auto;
+	margin-bottom: 0;
+	width: 94%;
+	background: #ffd976;
 }
 
 .ah-statistic-info_card:nth-child(4) .ah-bar {
-  background: #fbf4dd;
-  width: 31%;
+	background: #fbf4dd;
+	width: 31%;
 }
 
 /*==========================СТИЛІ БЛОКУ CHART СТАТИСТИКИ===========================*/
 
 .ah-statistic-chart {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 46%;
-  min-height: auto;
-  background: #ffffff;
+	display: flex;
+	flex-flow: column nowrap;
+	width: 46%;
+	min-height: auto;
+	background: #ffffff;
 }
 
 /*Розташовує хедери графіків в строку і розтягує на ширину шрафіку*/
 .ah-statistic-chart_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 1.46rem;
-  padding-right: 1.46rem;
-  padding-top: 0.8rem;
-  margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1.46rem;
+	padding-right: 1.46rem;
+	padding-top: 0.8rem;
+	margin-bottom: 0;
 }
 
 /*Налаштування кнопок*/
 .ah-btn-submit {
-  color: #0b2a97;
-  font-weight: 700;
-  padding: 1rem;
-  font-size: 1rem;
-  background-color: #f5f5f5;
-  text-align: center;
-  border-radius: 1.5rem;
-  border: none;
-  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+	color: #0b2a97;
+	font-weight: 700;
+	padding: 1rem;
+	font-size: 1rem;
+	background-color: #f5f5f5;
+	text-align: center;
+	border-radius: 1.5rem;
+	border: none;
+	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
 /*==========================СТИЛІ БЛОКУ INFO ===========================*/
 
 .ah-info {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  max-width: 100%;
-  height: 67rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	max-width: 100%;
+	height: 67rem;
 }
 
 /*==========================СТИЛІ БЛОКУ 1 INFO ===========================*/
 
 .ah-info-one {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 78%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 78%;
 }
 
 /*==========================СТИЛІ БЛОКУ 1 РЕКОМ. ТРЕНЕРІВ===========================*/
 
 .ah-info-one_trainers {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 95%;
-  height: 40%;
+	display: flex;
+	flex-flow: column nowrap;
+	width: 95%;
+	height: 40%;
 }
 
 .ah-trainers-header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-top: 1.87rem;
-  padding: 1rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top: 1.87rem;
+	padding: 1rem;
 }
 
 .ah-trainers-header div {
-  margin-left: 1.87rem;
+	margin-left: 1.87rem;
 }
 
 .ah-btn-trainers {
-  background: #0b2a97;
-  width: 8.87rem;
-  border-radius: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  margin-right: 1.87rem;
-  border: none;
+	background: #0b2a97;
+	width: 8.87rem;
+	border-radius: 1.5rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	margin-right: 1.87rem;
+	border: none;
 }
 
 .ah-btn-trainers span {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-  margin: 0 auto;
-  color: #ffffff;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	margin: 0 auto;
+	color: #ffffff;
 }
 
 .ah-trainers-block {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  height: 70%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	height: 70%;
 }
 
 .ah-trainers-block_item {
-  display: flex;
-  width: 20%;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  background: inherit;
-  border-radius: 1.8rem;
+	display: flex;
+	width: 20%;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	background: inherit;
+	border-radius: 1.8rem;
 }
 
 .ah-button-wrapper {
-  vertical-align: center;
+	vertical-align: center;
 }
 
 .ah-button-next {
-  background-color: #ffffff;
-  border-radius: 50%;
-  align-self: center;
-  width: 4.25rem;
-  height: 4.25rem;
-  border: none;
-  box-shadow: 0 0.81rem 1.37rem rgba(0, 0, 0, 0.12);
+	background-color: #ffffff;
+	border-radius: 50%;
+	align-self: center;
+	width: 4.25rem;
+	height: 4.25rem;
+	border: none;
+	box-shadow: 0 0.81rem 1.37rem rgba(0, 0, 0, 0.12);
 }
 
 .ah-trainers-block_item:hover {
-  box-shadow: 0 0.62rem 1.37rem rgba(0, 0, 0, 0.08);
+	box-shadow: 0 0.62rem 1.37rem rgba(0, 0, 0, 0.08);
 }
 
 .ah-trainers-img-wrapper {
-  width: 7rem;
+	width: 7rem;
 }
 
 .ah-trainers-img-wrapper img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .user-name {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-  text-align: center;
-  color: #000000;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	text-align: center;
+	color: #000000;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .user-status {
-  font-size: 0.87rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.31rem;
-  letter-spacing: 0;
-  text-align: left;
-  color: #969ba0;
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.31rem;
+	letter-spacing: 0;
+	text-align: left;
+	color: #969ba0;
 }
 
 .ah-rating {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: #0b2a97;
-  font-weight: 500;
-  padding-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: #0b2a97;
+	font-weight: 500;
+	padding-top: 1rem;
 }
 
 .ah-rating img {
-  width: 3rem;
+	width: 3rem;
 }
 
 .ah-rating span {
-  padding-left: 1rem;
-  margin-left: 1rem;
-  border-left: 1px solid #e2e2e2;
+	padding-left: 1rem;
+	margin-left: 1rem;
+	border-left: 1px solid #e2e2e2;
 }
 
 /*==========================СТИЛІ БЛОКУ 1 ГРАФІКУ КАЛОРІЙ===========================*/
 
 .ah-info-one_calories {
-  width: 95%;
-  height: 50%;
-  border: 1px solid #9202f8; /* тільки для розробки*/
+	width: 95%;
+	height: 50%;
+}
+
+.chart-container-1 {
+	position: relative;
+	height: 20vh;
+	width: 35vw;
+}
+
+.chart-container-2 {
+	position: relative;
+	height: 30vh;
+	width: 50vw;
 }
 
 /*==========================СТИЛІ БЛОКУ 2 INFO ===========================*/
 
 .ah-info-second {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: start;
-  align-items: center;
-  width: 22%;
-  min-height: auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: start;
+	align-items: center;
+	width: 22%;
+	min-height: auto;
 }
 
 /*==========================СТИЛІ БЛОКУ ДІЕТ. МЕНЮ ===========================*/
 
 .ah-info-second_diet-menu {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  width: 91%;
-  height: 95%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	width: 91%;
+	height: 95%;
 }
 
 .ah-diet-menu-header {
-  margin-top: 2.62rem;
-  margin-left: 1rem;
+	margin-top: 2.62rem;
+	margin-left: 1rem;
 }
 
 .ah-diet-menu-header h3 {
-  text-align: left;
-  margin-bottom: 2.37rem;
+	text-align: left;
+	margin-bottom: 2.37rem;
 }
 
 .ah-diet-menu-item {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 1rem;
-  margin-bottom: 2.62rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 1rem;
+	margin-bottom: 2.62rem;
 }
 
 .ah-diet-menu-item_main {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .ah-diet-menu-item_main div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  margin-left: 1rem;
-  margin-right: 1rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .dish-name {
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-  text-align: left;
-  margin-bottom: 1rem;
-  color: #000000;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	text-align: left;
+	margin-bottom: 1rem;
+	color: #000000;
 }
 
 .user {
-  font-size: 0.87rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.31rem;
-  letter-spacing: 0;
-  text-align: left;
-  color: #0b2a97;
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.31rem;
+	letter-spacing: 0;
+	text-align: left;
+	color: #0b2a97;
 }
 
 .ah-diet-menu-item_second {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 2rem;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 2rem;
 }
 
 .ah-diet-menu-item_second div {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
 }
 
 .ah-diet-menu-item_second div:nth-child(2) {
-  justify-content: flex-start;
-  width: 50%;
+	justify-content: flex-start;
+	width: 50%;
 }
 
 .ah-diet-menu-item_second span {
-  font-size: 0.87rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.31rem;
-  letter-spacing: 0;
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.31rem;
+	letter-spacing: 0;
 }
 
 @media (max-width: 575px) {
-  html {
-    font-size: 10px;
-  }
+	html {
+		font-size: 10px;
+	}
 
-  .ah-main {
-    flex-flow: column nowrap;
-    justify-content: space-around;
-  }
+	.ah-main {
+		flex-flow: column nowrap;
+		justify-content: space-around;
+	}
 
-  .ah-sidebar {
-    height: 100%;
-    flex: unset;
-    border-right: unset;
-    border-bottom: 1px solid red; /* тільки для розробки*/
-  }
+	.ah-sidebar {
+		height: 100%;
+		flex: unset;
+		border-right: unset;
+	}
 
-  .ah-button-container,
-  .ah-footer-container {
-    margin-top: 3rem;
-  }
+	.ah-button-container,
+	.ah-footer-container {
+		margin-top: 3rem;
+	}
 
-  .ah-footer-container {
-    margin-bottom: 2rem;
-  }
+	.ah-footer-container {
+		margin-bottom: 2rem;
+	}
 
-  .ah-header {
-    flex-flow: column nowrap;
-    justify-content: space-between;
-  }
+	.ah-header {
+		flex-flow: column nowrap;
+		justify-content: space-between;
+	}
 
-  .ah-search-form {
-    width: 100%;
-  }
+	.ah-search-form {
+		width: 100%;
+	}
 
-  .ah-statistic {
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
-  }
+	.ah-statistic {
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 1.5rem;
+		margin-bottom: 3rem;
+	}
 
-  .ah-statistic-info {
-    width: 96%;
-    min-height: auto;
-  }
+	.ah-statistic-info {
+		width: 96%;
+		min-height: auto;
+	}
 
-  .ah-statistic-chart {
-    width: 96%;
-    height: 45%;
-  }
+	.ah-statistic-chart {
+		width: 96%;
+		height: 45%;
+	}
 
-  .ah-info {
-    flex-flow: column nowrap;
-    min-height: auto;
-    /*height: unset;*/
-  }
+	.ah-info {
+		flex-flow: column nowrap;
+		min-height: auto;
+		/*height: unset;*/
+	}
 
-  .ah-info-one {
-    width: 100%;
-  }
+	.ah-info-one {
+		width: 100%;
+	}
 
-  .ah-info-second {
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: auto;
-  }
+	.ah-info-second {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: auto;
+	}
 
-  .ah-info-second_diet-menu {
-    width: 95%;
-    min-height: auto;
-  }
+	.ah-info-second_diet-menu {
+		width: 95%;
+		min-height: auto;
+	}
 }
 
 @media only screen and (min-device-width: 576px) and (max-device-width: 993px) {
-  html {
-    font-size: 12px;
-  }
+	html {
+		font-size: 12px;
+	}
 
-  .ah-header {
-    flex-flow: row wrap;
-  }
+	.ah-header {
+		flex-flow: row wrap;
+	}
 
-  .ah-header-navbar {
-    width: 30%;
-  }
+	.ah-header-navbar {
+		width: 30%;
+	}
 
-  .ah-search-form {
-    width: 70%;
-  }
+	.ah-search-form {
+		width: 70%;
+	}
 
-  .ah-header-icon {
-    width: 100%;
-    justify-content: space-evenly;
-  }
+	.ah-header-icon {
+		width: 100%;
+		justify-content: space-evenly;
+	}
 
-  .ah-statistic {
-    flex-flow: column-reverse nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1.5rem;
-    height: unset;
-    min-height: auto;
-  }
+	.ah-statistic {
+		flex-flow: column-reverse nowrap;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 1.5rem;
+		height: unset;
+		min-height: auto;
+	}
 
-  .ah-statistic-info {
-    width: 96%;
-    min-height: auto;
-  }
+	.ah-statistic-info {
+		width: 96%;
+		min-height: auto;
+	}
 
-  .ah-statistic-chart {
-    width: 93%;
-    margin-bottom: 1rem;
-  }
+	.ah-statistic-chart {
+		width: 93%;
+		margin-bottom: 1rem;
+	}
 
-  .ah-info {
-    flex-flow: column nowrap;
-    min-height: auto;
-    height: unset;
-  }
+	.ah-info {
+		flex-flow: column nowrap;
+		min-height: auto;
+		height: unset;
+	}
 
-  .ah-info-one {
-    min-height: auto;
-    width: 100%;
-  }
+	.ah-info-one {
+		min-height: auto;
+		width: 100%;
+	}
 
-  .ah-info-one_trainers {
-    width: 90%;
-    margin-top: 1.5rem;
-  }
+	.ah-info-one_trainers {
+		width: 90%;
+		margin-top: 1.5rem;
+	}
 
-  .ah-info-second {
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    min-height: auto;
-    width: 100%;
-  }
+	.ah-info-second {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		min-height: auto;
+		width: 100%;
+	}
 
-  .ah-info-second_diet-menu {
-    flex-flow: row nowrap;
-    justify-content: center;
-    width: unset;
-    height: unset;
-    min-height: auto;
-  }
+	.ah-info-second_diet-menu {
+		flex-flow: row nowrap;
+		justify-content: center;
+		width: unset;
+		height: unset;
+		min-height: auto;
+	}
 
-  .ah-diet-menu-header {
-    width: 100%;
-  }
+	.ah-diet-menu-header {
+		width: 100%;
+	}
 
-  .ah-diet-menu-item_main {
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: unset;
-    margin-right: unset;
-  }
+	.ah-diet-menu-item_main {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		margin-left: unset;
+		margin-right: unset;
+	}
 }
 
 @media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
-  .ah-header {
-    flex-flow: row wrap;
-  }
+	.ah-header {
+		flex-flow: row wrap;
+	}
 
-  .ah-header-navbar {
-    order: 1;
-    width: 30%;
-  }
+	.ah-header-navbar {
+		order: 1;
+		width: 30%;
+	}
 
-  .ah-header-icon {
-    order: 2;
-    width: 70%;
-  }
+	.ah-header-icon {
+		order: 2;
+		width: 70%;
+	}
 
-  .ah-search-form {
-    order: 3;
-    width: 100%;
-  }
+	.ah-search-form {
+		order: 3;
+		width: 100%;
+	}
 }
 
 @media only screen and (min-device-width: 992px) and (max-device-width: 1400px) {
-  .ah-info-second_diet-menu {
-    height: unset;
-    min-height: auto;
-  }
+	.ah-info-second_diet-menu {
+		height: unset;
+		min-height: auto;
+	}
 
-  .ah-diet-menu-item_main {
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-  }
+	.ah-diet-menu-item_main {
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
 
-  .ah-diet-menu-header {
-    margin-top: 0.5rem;
-  }
+	.ah-diet-menu-header {
+		margin-top: 0.5rem;
+	}
 
-  .ah-diet-menu-item {
-    margin-bottom: 0.5rem;
-  }
+	.ah-diet-menu-item {
+		margin-bottom: 0.5rem;
+	}
 
-  .ah-diet-menu-item_second {
-    margin-top: 0.5rem;
-  }
+	.ah-diet-menu-item_second {
+		margin-top: 0.5rem;
+	}
 }
