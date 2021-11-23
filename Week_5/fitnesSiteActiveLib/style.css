@@ -585,10 +585,92 @@ input[type="text"]::-webkit-input-placeholder {
 .ah-info-second_diet-menu {
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-around;
+	justify-content: flex-start;
 	width: 91%;
 	height: 95%;
-	border: 1px solid #565e64; /* тільки для розробки*/
+}
+
+.ah-diet-menu-header {
+	margin-top: 2.62rem;
+	margin-left: 1rem;
+}
+
+.ah-diet-menu-header h3 {
+	text-align: left;
+	margin-bottom: 2.37rem;
+}
+
+.ah-diet-menu-item {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 1rem;
+	margin-bottom: 2.62rem;
+}
+
+.ah-diet-menu-item_main {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.ah-diet-menu-item_main div {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.dish-name {
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: 0;
+	text-align: left;
+	margin-bottom: 1rem;
+	color: #000000;
+}
+
+.user {
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.31rem;
+	letter-spacing: 0;
+	text-align: left;
+	color: #0B2A97;
+}
+
+.ah-diet-menu-item_second {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.ah-diet-menu-item_second div {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+.ah-diet-menu-item_second div:nth-child(2) {
+	justify-content: flex-start;
+	width: 50%;
+}
+
+.ah-diet-menu-item_second span {
+	font-size: 0.87rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.31rem;
+	letter-spacing: 0;
 }
 
 @media (max-width: 575px) {
@@ -736,6 +818,26 @@ and (max-device-width: 993px) {
 		min-height: auto;
 		width: 100%;
 	}
+
+	.ah-info-second_diet-menu {
+		flex-flow: row nowrap;
+		justify-content: center;
+		width: unset;
+		height: unset;
+		min-height: auto;
+	}
+
+	.ah-diet-menu-header {
+		width: 100%;
+	}
+
+	.ah-diet-menu-item_main {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		margin-left: unset;
+		margin-right: unset;
+	}
 }
 
 @media only screen
@@ -762,6 +864,30 @@ and (max-device-width: 1199px) {
 	}
 }
 
+@media only screen
+and (min-device-width: 992px)
+and (max-device-width: 1400px) {
 
+	.ah-info-second_diet-menu {
+		height: unset;
+		min-height: auto;
+	}
 
+	.ah-diet-menu-item_main {
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
 
+	.ah-diet-menu-header {
+		margin-top: 0.5rem;
+	}
+
+	.ah-diet-menu-item {
+		margin-bottom: 0.5rem;
+	}
+
+	.ah-diet-menu-item_second {
+		margin-top: 0.5rem;
+	}
+}
