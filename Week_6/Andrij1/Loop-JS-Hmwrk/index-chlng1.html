@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Study</title>
+    <style>
+      html {
+        font-family: sans-serif;       
+        min-width: 90%;     
+        margin: 2rem;
+      }
+      h1 {
+        text-align: center;        
+        color: rgb(18, 3, 156);
+      }
+      p {
+        float: right;
+        color:rgb(149, 0, 0);
+        font-size: 120%;
+        font-weight: 600;
+        line-height: 150%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>MATH: Coding Challenge. Task 1. </h1>
+    <p>Mark and John are trying to compare their BMI (Body Mass Index),
+       which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
+    <br>
+    1. Store Mark's and John's mass and height in variables
+    <br>
+    2. Calculate both their BMIs using the formula (you can even implement both versions)
+    <br>
+    3. Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+    <br>
+    TEST DATA 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+    <br>
+    TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
+    </p>
+  <script>
+    const weightMark = 78;
+    const heightMark = 1.69;
+    const weightJohn = 92;
+    const heightJohn = 1.95;
+    const bmiMark = weightMark / heightMark **2;
+    bmiMark1 = bmiMark.toFixed(2);
+    const bmiJohn = weightJohn / heightJohn **2;
+    bmiJohn1 = bmiJohn.toFixed(2);
+    const markHigherBMI = bmiMark1 > bmiJohn1;
+    console.log(bmiMark1);
+    console.log(bmiJohn1);
+    console.log(markHigherBMI);
+  </script>
+</html>

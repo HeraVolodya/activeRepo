@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Study</title>
+    <style>
+      html {
+        font-family: sans-serif;       
+        min-width: 90%;     
+        margin: 2rem;
+      }
+      h1 {
+        text-align: center;        
+        color: rgb(18, 3, 156);   
+      }
+      p {
+        float: right;
+        color:rgb(149, 0, 0);
+        font-size: 120%;
+        font-weight: 600;
+        line-height: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MATH: Coding Challenge. Task 3. </h1>
+    <p>There are two gymnastics teams, Dolphins and Koalas. They compete against each other 
+        3 times. The winner with the highest average score wins the a trophy!
+        <br>
+        1. Calculate the average score for each team, using the test data below
+        <br>
+        2. Compare the team's average scores to determine the winner of the competition, 
+        and print it to the console. Don't forget that there can be a draw, so test for that as 
+        well (draw means they have the same average score).
+        <br>
+        3. BONUS 1: Include a requirement for a minimum score of 100. With this rule, a team 
+        only wins if it has a higher score than the other team, and the same time a score of 
+        at least 100 points. HINT: Use a logical operator to test for minimum score, as well 
+        as multiple else-if blocks.
+        <br>
+        4. BONUS 2: Minimum score also applies to a draw! So a draw only happens when both teams 
+        have the same score and both have a score greater or equal 100 points. 
+        Otherwise, no team wins the trophy.
+        <br>
+        TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+        <br>
+        TEST DATA BONUS 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+        <br>
+        TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+           
+    </p>
+  <script>
+    let x = 97;
+    let y = 112;
+    let z = 101;
+    let scrDlphns = (x + y + z) / 3;
+    scrDlphns = scrDlphns.toFixed(0);
+    console.log(scrDlphns);
+    let x1 = 109;
+    let y1 = 95;
+    let z1 = 123;
+    let scrKls = (x1 + y1 + z1) / 3;
+    scrKls = scrKls.toFixed(0);
+    console.log(scrKls);
+    function higherScore() {
+        if(scrDlphns > scrKls && scrDlphns >= 100) {
+            alert(`Dolpnins' score ${scrDlphns} is higher than Koalas' ${scrKls} and Dolphins' win the trophy!`);
+        } else if (scrKls > scrDlphns && scrKls >= 100){
+            alert(`Koalas' score ${scrKls} is higher than Dolphins' ${scrDlphns} and Koalas' win the trophy, for TEST DATA BONUS 1!`);            
+        } else if(scrDlphns === scrKls || scrDlphns < 100 && scrKls < 100) {
+            alert("It is a draw - Dolphins' and Koalas' have the same strength or scored less than 100 points each one and the trophy remains intact!");
+        }
+        
+    }
+    higherScore();
+  
+    console.log(higherScore);
+
+  </script>
+</html>
