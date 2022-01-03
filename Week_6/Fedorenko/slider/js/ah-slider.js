@@ -1,4 +1,4 @@
-/* Сиворює колекцію всих слайдерів на сторінці */
+/* Створює колекцію всих слайдерів на сторінці */
 let sliders = document.querySelectorAll(".ah-slider");
 
 let x;
@@ -15,12 +15,15 @@ for (x = 0; x < sliders.length; x++) {
   /* Запуск основної функції слайдера */
   showSlides(slideIndex, sliderId);
 
+  /* Додаємо таймер зміни слайдів */
+  let timerId = setInterval(() => nextSlide(sliderId), 3000);
+
   /* Функція збільшує індекс на 1, показує наступний слайд */
   function nextSlide(sliderId) {
     showSlides(slideIndex += 1, sliderId);
   }
 
-  /* Функция зменшує индекс на 1, показывает попередній слайд */
+  /* Функция зменшує индекс на 1, показує попередній слайд */
   function prevSlide(sliderId) {
     showSlides(slideIndex -= 1, sliderId);
   }
@@ -30,24 +33,36 @@ for (x = 0; x < sliders.length; x++) {
     showSlides(slideIndex = n, sliderId);
   }
 
-  /* Додає функціонал по кліку на "next" */
+  /* Додає функціонал по кліку на "next", зупиняє автогортання */
   document.querySelector(`#${sliderId} [data-bs-slide="next"]`).addEventListener('click', function () {
-    nextSlide(sliderId)
+    if (timerId) {
+      clearInterval(timerId);
+      timerId = null;
+    }
+    nextSlide(sliderId);
   });
 
-  /* Додає функціонал по кліку на "prev" */
+  /* Додає функціонал по кліку на "prev", зупиняє автогортання*/
   document.querySelector(`#${sliderId} [data-bs-slide="prev"]`).addEventListener('click', function () {
-    prevSlide(sliderId)
+    if (timerId) {
+      clearInterval(timerId);
+      timerId = null;
+    }
+    prevSlide(sliderId);
   });
 
-  /*Додає функціонал по кліку для індикаторів */
+  /*Додає функціонал по кліку для індикаторів, зупиняє автогортання*/
   const dots = document.querySelectorAll(`#${sliderId} .ah-slider_dots__item`);
   dots.forEach(el => {
     let attrTo = el.getAttribute("data-bs-slide-to");
     el.addEventListener('click', function () {
+      if (timerId) {
+        clearInterval(timerId);
+        timerId = null;
+      }
       currentSlide(attrTo, sliderId);
     })
-  })
+  });
 
   /* Основна функція слайдера */
   function showSlides(n, sliderId) {
