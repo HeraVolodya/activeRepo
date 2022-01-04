@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Стиль конопки дропдауну*/
+.ah-dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+ .ah-dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }  
+  /*Позиціювання дропдауну - властивість списку релатів привязує 
+  до себе абсолютні позиції елементів дропдауну*/
+  .ah-dropdown {
+    position: relative;
+    display: inline-block;    
+  }  
+
+  /*Позиціюваня контенту - абсолютний контент позаціонується 
+  відносно відносного заголовку (меню) списку*/
+  .ah-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }  
+  /*Стилі вмісту дропдауну*/
+  .ah-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+    .ah-dropdown-content a:hover {background-color: #ddd}
+    
+  /*Додаємо клас до попереднього, коли користувач натискає кнопку всередині списку*/
+    .show {display:block;}
+  

@@ -1,0 +1,12 @@
+.ah-dropdown-submenu {
+    position: relative;
+}
+.ah-dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+#list-1,
+#list-2 {
+    margin-top: 100px;
+}
