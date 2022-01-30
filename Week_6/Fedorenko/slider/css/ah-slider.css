@@ -72,7 +72,11 @@
 	position: absolute;
 	color: #FFFFFF;
 	bottom: 2%;
-	left: 42%;
+	width: 40%;
+  left: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Індикатори*/
