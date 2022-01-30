@@ -1,13 +1,45 @@
 /* Створює колекцію всих слайдерів на сторінці */
 let sliders = document.querySelectorAll(".ah-slider");
 
-let x;
-
 /* Прописує та запускає логіку функціоналу для кожного слайдеру на основі його ID */
-for (x = 0; x < sliders.length; x++) {
+for (let x = 0; x < sliders.length; x++) {
 
   /* Отримуєм ID слайдера */
-  let sliderId = sliders[x].getAttribute("id")
+  let sliderId = sliders[x].getAttribute("id");
+
+  /*==================АВТОСТВОРЕННЯ СТРІЛОК НАВІГАЦІЇ===========================*/
+  const prev = document.createElement("span");
+  prev.setAttribute("data-bs-slide", "prev");
+  prev.classList.add("ah-prev");
+  prev.innerHTML = "&#10094;";
+  sliders[x].append(prev);
+
+  const next = document.createElement("span");
+  next.setAttribute("data-bs-slide", "next");
+  next.classList.add("ah-next");
+  next.innerHTML = "&#10095;";
+  sliders[x].append(next);
+  /*=============================================================================*/
+
+  /*======================АВТОСТВОРЕННЯ ІНДИКАТОРІВ=============================*/
+  /* Створює колекцію всих слайдів в слайдері */
+  let innerSliders = document.querySelectorAll(`#${sliderId} .ah-slider_item`);
+
+  /* Створює елемент div контейнер для індикаторів */
+  const sliderDots = document.createElement("div");
+  sliderDots.classList.add("ah-slider_dots")
+
+  /* Для кожного слайда створює індикатор та додає його в кінець блоку */
+  for (let y = 0; y < innerSliders.length; y++) {
+    const dot = document.createElement("span");
+    dot.setAttribute("data-bs-slide-to", (y + 1).toString());
+    dot.classList.add("ah-slider_dots__item");
+    sliderDots.append(dot);
+  }
+
+  /* Блок індикаторів додає в кінець блоку слайдера */
+  sliders[x].append(sliderDots);
+  /*=============================================================================*/
 
   /* Індекс слайда по замовчанню */
   let slideIndex = 1;
