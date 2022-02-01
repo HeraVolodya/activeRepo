@@ -9,6 +9,7 @@ function ahSlider(options = {}) {
     prevLabel: "&#10094;",
     nextLabel: "&#10095;",
     indicatorsColor: "#4d4dff",
+    roundedIndicators: false,
   }
 
   /* Результуючі опції */
@@ -50,6 +51,14 @@ function ahSlider(options = {}) {
       const dot = document.createElement("span");
       dot.setAttribute("data-bs-slide-to", (y + 1).toString());
       dot.classList.add("ah-slider_dots__item");
+
+      /* Відображати круглі індикатори, якщо це встановлено в опціях */
+      if (settings.roundedIndicators) {
+        dot.style.width = "0.8rem";
+        dot.style.height = "0.8rem";
+        dot.style.borderRadius = "50%";
+        dot.style.margin = "0 0.4rem";
+      }
       sliderDots.append(dot);
     }
 
