@@ -1,14 +1,18 @@
 function ahSlider(options = {}) {
 
-  let settings = {
-    autoScroll: (typeof options.autoScroll !== 'undefined') ? options.autoScroll : true,
-    scrollTimeout: options.scrollTimeout || 3000,
-    showNavBtn: (typeof options.showNavBtn !== 'undefined') ? options.showNavBtn : true,
-    showIndicators: (typeof options.showIndicators !== 'undefined') ? options.showIndicators : true,
-    prevLabel: (typeof options.prevLabel !== 'undefined') ? options.prevLabel : "&#10094;",
-    nextLabel: (typeof options.nextLabel !== 'undefined') ? options.nextLabel : "&#10095;",
-    indicatorsColor: (typeof options.indicatorsColor !== 'undefined') ? options.indicatorsColor : "#4d4dff",
+  /* Дефолтні опції */
+  let defaultOptions = {
+    autoScroll: true,
+    scrollTimeout: 3000,
+    showNavBtn: true,
+    showIndicators: true,
+    prevLabel: "&#10094;",
+    nextLabel: "&#10095;",
+    indicatorsColor: "#4d4dff",
   }
+
+  /* Результуючі опції */
+  let settings = Object.assign(defaultOptions, options);
 
   /* Створює колекцію всих слайдерів на сторінці */
   let sliders = document.querySelectorAll(".ah-slider");
