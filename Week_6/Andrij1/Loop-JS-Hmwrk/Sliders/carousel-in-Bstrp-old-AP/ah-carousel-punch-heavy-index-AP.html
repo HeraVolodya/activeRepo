@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Carousel in Bootstrap</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/ah-carousel-fixed.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+    <h1 id="head">Carousel</h1>
+    <div id="theCarousel" class="carousel slide" >
+        <div class="carousel-indicators">
+            <button type="button" data-target="#theCarousel" data-slide-to="0" class="active" aria-current="true" aria-label="slide1">
+              <span></span>
+            </button>
+            <button type="button" data-target="#theCarousel" data-slide-to="1" aria-label="slide2">
+              <span></span>
+            </button>
+            <button type="button" data-target="#theCarousel" data-slide-to="2" aria-label="slide3">
+              <span></span>
+            </button>
+          </div>
+       
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="slide1"></div>
+                    <div class="carousel-caption" id="carousel1">                        
+                        <h1>Реєструйся</h1>
+                        <p>Швидко і без проблем знаходь музику</p>
+                        <p><a href="#" id="btn" class="btn btn-primary btn-lg">Реєстрація</a></p>
+                    </div>
+                </div>
+
+                <div class="item" >
+                    <div class="slide2"></div>
+                    <div class="carousel-caption" id="carousel2">                        
+                        <h1>Оформлюй платну підписку</h1>
+                        <p>Користуйся рандомайзером без обмежень</p>
+                        <p><a href="#" id="btn" class="btn btn-primary btn-lg">Перейти</a></p>                        
+                    </div>
+                </div>
+
+                <div class="item" >
+                    <div class="slide3"></div>
+                    <div class="carousel-caption" id="carousel3">                        
+                        <h1>Підписуйся в соцмережах</h1>
+                        <p>Обирай найбільшу збірку найдешевше</p>
+                        <p><a href="#" id="btn" class="btn btn-primary btn-lg">Обрати</a></p>                        
+                    </div>
+                </div>
+            </div>
+                <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+                    <img id="arrow" src="img/prev2.png"></img>
+
+                <a class="right carousel-control" href="#theCarousel" data-slide="next">
+                    <img id="arrow" src="img/next2.png"></img>
+
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script/1-heavy.js"></script>
+</body>
+</html>

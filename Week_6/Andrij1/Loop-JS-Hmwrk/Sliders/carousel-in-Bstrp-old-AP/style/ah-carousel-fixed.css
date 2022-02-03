@@ -1,0 +1,104 @@
+body {
+    font-size: 62.5%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Carousel Styling*/
+#carousel1{
+
+    max-width: 25%;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-left: 0 0;
+}
+#carousel3{
+
+    max-width: 30%;
+    text-align: right;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: 0;
+}
+#carousel2{
+    max-width: 30%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.slide1{
+    background-image: url('../img/1.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide2{
+    background-image: url('../img/2.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide3{
+    background-image: url('../img/3.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}  
+.carousel-caption h1{
+    font-size: 6em;
+    padding-bottom: .4em;
+}
+.carousel-caption p{
+    font-size: 4em;
+}
+.carousel-indicators [data-target] {
+    position: relative;
+    width: 45px;
+    height: 5px;
+    border: none;
+    border-radius: 24px;
+    background-color: #c49edf;
+}
+.carousel-indicators [data-target].active {
+    background-color: #b020e9;
+}
+.carousel-indicators [data-target]:hover {
+    background-color: #18d407;
+}
+.carousel-indicators [data-target] span {
+    content: ’’;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #dab166;
+    border-radius: inherit;
+}
+#arrow{
+    height: 5rem;
+    width: 2rem;
+    margin-top: 100%;
+}
+
+#btn{
+    background:linear-gradient(217deg, rgba(195, 8, 148, 0.8), rgba(255,0,0,0) 50%),
+    linear-gradient(127deg, rgba(240, 240, 240, 0.8), rgba(0,255,0,0) 200%),
+    linear-gradient(336deg, rgba(197, 197, 212, 0.8), rgba(0,0,255,0) 10%);
+    font-size: 2rem;
+    color:rgba(0, 0, 0, 0.842);
+    width: 15rem;
+    border-radius: 1rem;
+    border-color: transparent;
+    min-width: 10rem;
+
+}
+#btn:hover{
+    background:linear-gradient(217deg, rgba(240, 234, 238, 0.8), rgba(255,0,0,0) 50%),
+    linear-gradient(127deg, rgb(241, 245, 5), rgba(0,255,0,0) 100%),
+    linear-gradient(336deg, rgba(238, 217, 97, 0.8), rgba(0,0,255,0) 50%);
+}
