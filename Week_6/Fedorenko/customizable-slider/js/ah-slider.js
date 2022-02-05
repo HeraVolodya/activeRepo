@@ -10,6 +10,7 @@ function ahSlider(options = {}) {
     nextLabel: "&#10095;",
     indicatorsColor: "#4d4dff",
     roundedIndicators: false,
+    polygon: false,
   }
 
   /* Результуючі опції */
@@ -44,7 +45,7 @@ function ahSlider(options = {}) {
 
     /* Створює елемент div контейнер для індикаторів */
     const sliderDots = document.createElement("div");
-    sliderDots.classList.add("ah-slider_dots")
+    sliderDots.classList.add("ah-slider_dots");
 
     /* Для кожного слайда створює індикатор та додає його в кінець блоку */
     for (let y = 0; y < innerSliders.length; y++) {
@@ -68,6 +69,12 @@ function ahSlider(options = {}) {
 
     /* Індекс слайда по замовчанню */
     let slideIndex = 1;
+
+    /* Відображати фон слайдера, якщо це встановлено в опціях */
+    if (settings.polygon) {
+      let currentSlider = document.querySelector(`#${sliderId}`);
+      currentSlider.style.backgroundColor = settings.indicatorsColor;
+    }
 
     /* Запуск основної функції слайдера */
     showSlides(slideIndex, sliderId);
@@ -143,10 +150,12 @@ function ahSlider(options = {}) {
 
     /* Основна функція слайдера */
     function showSlides(n, sliderId) {
-      let i;
 
       //* Отримуєм колекцію слайдів слайдера з sliderId */
       let slides = document.querySelectorAll(`#${sliderId} .ah-slider_item`);
+
+      //* Отримуєм колекцію картинок слайдера з sliderId */
+      let images = document.querySelectorAll(`#${sliderId} .ah-slider_item img`);
 
       //* Отримуєм колекцію індикаторів слайдера з sliderId */
       let dots = document.querySelectorAll(`#${sliderId} [data-bs-slide-to]`);
@@ -162,12 +171,18 @@ function ahSlider(options = {}) {
       }
 
       /* Не відображати всі слайди */
-      for (i = 0; i < slides.length; i++) {
+      for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
 
       /* Відображає поточний слайд */
       slides[slideIndex - 1].style.display = "block";
+
+      /* Відображати полігон, якщо це встановлено в опціях */
+      if (settings.polygon) {
+        images[slideIndex - 1].style.clipPath = "polygon(0% 10%, 30% 0%, 95% 0%, 100% 33%, 100% 90%, 70% 100%, 5%" +
+          " 100%, 0% 66%)";
+      }
 
       /* Не відображати активними всі індикатори */
       for (i = 0; i < dots.length; i++) {
