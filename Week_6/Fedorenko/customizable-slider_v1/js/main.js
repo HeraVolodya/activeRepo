@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     nextLabel: "next",        //ярлик для кнопки "наступний",  default &#10095;  >
     indicatorsColor: "red",   //колір активних індикаторів, default #4d4dff
     roundedIndicators: false, //круглі індикатори, default false
+    polygon: false,           //рамка полігону з фоном кольору індикаторів
   });
 });
 
