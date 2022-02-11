@@ -1,0 +1,101 @@
+/* Cам слайдер */
+.ah-slider {
+	position: relative;
+	max-width: 100%;
+	font-family: 'Helvetica', sans-serif;
+	margin: auto;
+	/*min-height: auto;*/
+	max-height: 25rem;
+}
+
+/* Картинка маштабується по по відношенню до батьківського елементу */
+.ah-slider_item img {
+	object-fit: cover;
+	width: 100%;
+	/*min-height: auto;*/
+	max-height: 25rem;
+}
+
+/* Кнопки вперед і назад */
+.ah-slider .ah-prev, .ah-slider .ah-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -1.37rem;
+	padding: 1rem;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 1.12rem;
+	transition: 0.6s ease;
+	border-radius: 0 0.18rem 0.18rem 0;
+}
+
+.ah-slider .ah-next {
+	right: 0;
+	border-radius: 0.18rem 0 0 0.18rem;
+}
+
+/* При наведенні на кнопки додаєм фон кнопок */
+.ah-slider .ah-prev:hover,
+.ah-slider .ah-next:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовок слайду */
+.ah-slider_item__title {
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 2.5rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+/* Текст слайду */
+.ah-slider_item__text {
+	position: absolute;
+	text-align: justify;
+	color: #FFFFFF;
+	font-size: 1.1rem;
+	left: 50%;
+	top: 73%;
+	width: 80%;
+	line-height: 120%;
+	transform: translate(-50%, -50%);
+	text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+/* Блок індикаторів */
+.ah-slider_dots {
+	position: absolute;
+	color: #FFFFFF;
+	bottom: 2%;
+	width: 40%;
+	left: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Індикатори*/
+.ah-slider_dots__item {
+	cursor: pointer;
+	height: 0.4rem;
+	width: 1.8rem;
+	border-radius: 20%;
+	margin: 0 0.2rem;
+	background-color: #FFFFFF;
+	z-index: 2;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+/* Зміна фону індикаторів при наведенні мишою*/
+.ah-slider_dots__item:hover {
+	background-color: #9999ff;
+}
+
+
+
