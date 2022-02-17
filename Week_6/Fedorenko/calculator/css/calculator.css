@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: #2B2727;
+}
+
+.ah-container {
+	height: 100%;
+	width: 100%;
+}
+
+.ah-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+.ah-calculator {
+	display: flex;
+	flex-flow: column nowrap;
+	color: yellow;
+	width: 15rem;
+	height: 20rem;
+	margin-top: 5rem;
+}
+
+.ah-display {
+	height: 18%;
+	border: 1px solid yellow;
+	border-radius: 10px;
+	background: #1a0d00;
+	font-size: 3rem;
+	padding-right: 1rem;
+	text-align: right;
+	vertical-align: center;
+}
+
+.ah-operators {
+	width: 100%;
+	height: 16%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.key-op {
+	flex: 25%;
+	font-size: 2rem;
+	color: yellow;
+	border: 1px solid yellow;
+	border-radius: 10px;
+	background: #1a0d00;
+}
+
+.key-op:hover, .key-eq:hover, .key-cl:hover, .numpad:hover {
+	background-color: #003300;
+}
+
+.ah-numbers {
+	display: flex;
+	flex-flow: row wrap;
+	height: 68%;
+}
+
+.numpad, .key-eq, .key-cl {
+	flex: 33%;
+	height: 25%;
+	font-size: 1.5rem;
+	color: yellow;
+	border: 1px solid yellow;
+	border-radius: 10px;
+	background: #1a0d00;
+}
+
+
