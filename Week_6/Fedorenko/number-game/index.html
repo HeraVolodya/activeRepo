@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Random number game</title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="block">
+	<h3>Вгадай рандомне число</h3>
+	<div id="display" class="display"></div>
+	<form id="form" action="#">
+		<fieldset>
+			<fieldset>
+				<legend>Параметри гри</legend>
+				<label for="minNumber">Мінімальне число</label> <br>
+				<input type="number" id="minNumber" class="mb in"> <br>
+				<label for="maxNumber">Максимальне число</label> <br>
+				<input type="number" id="maxNumber" class="mb in"> <br>
+				<label for="userAttemptInput">Кількість спроб</label> <br>
+				<input type="number" id="userAttemptInput" class="mb in"> <br>
+			</fieldset>
+			<label for="userNumberInput">Ваше число</label> <br>
+			<input type="number" id="userNumberInput" class="in">
+		</fieldset>
+		<br>
+
+		<button id="try" class="btn mt">Спроба</button>
+		<button id="reset" class="btn">Почати знову</button>
+	</form>
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>
+
+
