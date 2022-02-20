@@ -15,6 +15,7 @@ class Game {
   #captureInput() {
     this.#inputSource.addEventListener('click', (e) => {
       if (e.target.id === 'try') {
+        e.preventDefault();
         if (this.#continueGame) {
           if (
             !this.#minNumber ||
@@ -53,6 +54,7 @@ class Game {
       }
 
       if (e.target.id === 'reset') {
+        e.preventDefault();
         this.#reset();
         this.#display('Поїхали!', 'success');
       }
