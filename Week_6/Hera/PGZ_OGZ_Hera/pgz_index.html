@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGZ</title>
+    <link rel="stylesheet" href="pgz_ogz__style.css">
+</head>
+<body>
+    <header class="container">
+            <div class="title">ГЕОДЕЗИЧНИЙ КАЛЬКУЛЯТОР</div>
+            <div class="pgz">
+                <a href="">Пряма геодизична задача</a>
+            </div>
+            <div class="ogz">
+                <a href="ogz_index.html">Обернена геодезична задача</a>
+            </div>
+            
+    </header>
+    
+<section class="con_1">
+    <div class="pgz__calc">
+        <div class="pgz__calc__title">Х координата КСП</div>
+        <input class="pgz__calc__inp" type="text" id="myCoordX"><br>
+        <div class="pgz__calc__title">Y координата КСП</div>
+        <input class="pgz__calc__inp" type="text" id="myCoordY"><br>
+        <div class="pgz__calc__title">a дерекційний кут на ціль</div>
+        <input class="pgz__calc__inp" type="text" id="myA"><br>
+        <div class="pgz__calc__title">D дальність до цілі</div>
+        <input class="pgz__calc__inp" type="text" id="myD"><br>
+        <button class="pgz__calc__btn" type="button" id="pgzResult">РОЗРАХУВАТИ</button>
+        </h3><div class="coord_target_x"></div>
+        <div class="coord_target_y"></div>
+    </div>
+</section>
+
+    <script src="pgz_main.js"></script>
+</body>
+</html>

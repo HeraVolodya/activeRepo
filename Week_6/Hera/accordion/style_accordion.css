@@ -1,0 +1,46 @@
+.html .body{
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accordioin-warpper{
+    min-width: 60%;
+}
+.accordion-item{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid red;
+}
+.accordion-item-title{
+    padding: 10px;
+    background-color: darkgray;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+.accordion-item-title::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 20px;
+    font-size: 24px;
+}
+.accordion-item-content{
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+.accordion-item.active .accordion-item-content{
+    height: 200px;
+}
+.accordion-item.active .accordion-item-title::before{
+    content: "-";
+}
